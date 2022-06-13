@@ -13,9 +13,9 @@ body {
     text-align: center;
 }
 
-#terrestres {
+.terrestres {
     display: grid;
-    background: #b45019;
+    background: linear-gradient(#ff6d2f, #670000);
     border-radius: 20px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -23,48 +23,48 @@ body {
 
 .onca {
     grid-column-start: 1;
-    margin: 5em 0;
+    margin: 3em 0 3em 2em;
 }
 
 .lobo {
     grid-column-start: 2;
     grid-row-start: 2;
-    margin: 5em 0 5em 2em;
+    margin: 3em 2em 3em 2em;
 }
 
 .mico {
     grid-column-start: 1;
     grid-row-start: 3;
-    margin: 5em 0;
+    margin: 3em 0 3em 2em;
 }
 
-#aquaticos {
+.aquaticos {
     display: grid;
-    margin-top: 40px;
-    background: #90ddff;
+    background: linear-gradient(#30cbff, #012536);
     border-radius: 20px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    margin-top: 2em;
 }
 
 .tartaruga {
     grid-column-start: 1;
-    margin: 5em 0;
+    margin: 3em 0 3em 2em;
 }
 
 .baleia {
     grid-column-start: 2;
     grid-row-start: 2;
-    margin: 5em 0 5em 2em;
+    margin: 3em 2em 3em 2em;
 }
 
 .boto {
     grid-column-start: 1;
     grid-row-start: 3;
-    margin: 5em 0;
+    margin: 3em 0 3em 2em;
 }
 
-#resumo {
+.resumo {
     border: 2px solid #000;
     border-radius: 20px;
     margin-top: 10em;
@@ -72,7 +72,7 @@ body {
     padding: 10em;
 }
 
-#inf {
+.inf {
     border: 2px solid #000;
     border-radius: 20px;
     margin-top: 10em;
