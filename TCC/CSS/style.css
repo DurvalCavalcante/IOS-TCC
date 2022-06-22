@@ -108,11 +108,13 @@ header {
     box-shadow: 0 0 20px rgb(0, 0, 0, 0.4);
     column-count: 2;
     column-gap: 40px;
-    column-rule: 2px solid black;
+    /* column-rule: 2px solid black; */
 }
 
 .objetivo div {
+    margin: 0 2em;
     padding: 10px 30px 0 30px;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.4);
 }
 
 .objetivo h1 {
@@ -122,6 +124,10 @@ header {
 
 .objetivo h2 {
     padding-bottom: 30px;
+}
+
+.objetivo p {
+    padding: 0 30px 30px 30px;
 }
 
 @media screen and (max-width:500px) {
