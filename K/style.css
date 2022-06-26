@@ -3,22 +3,6 @@
     padding: 0;
 }
 
-a {
-    color: black;
-    text-decoration: none;
-    font-family: sans-serif;
-}
-
-a:hover {
-    background-color: #7e7e7e7e;
-}
-
-#logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding: 1rem;
-}
-
 #header {
     box-sizing: border-box;
     display: flex;
@@ -28,6 +12,23 @@ a:hover {
     justify-content: space-between;
     background-color: #e7e7e7;
 }
+
+a {
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+#menu a:hover {
+    background-color: #7e7e7e7e;
+}
+
+#logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
 
 #menu {
     display: flex;
@@ -44,7 +45,10 @@ a:hover {
     display: none;
 }
 
+    /* Fim da header */
 
+
+    /* Responsividade */
 @media (max-width: 600px) {
     #menu {
         display: block;
@@ -74,20 +78,21 @@ a:hover {
         border-bottom: 2px solid #d9d9d9;
         padding: 20px;
     }
-    
-    #btn{
+
+    #btn {
         transition: 0.2s;
         padding: 13px;
         background-color: transparent;
-        background-image: url(./IMG/open.png);
+        background-image: url(./IMG/open.svg);
         background-size: cover;
         border: none;
         cursor: pointer;
         display: block;
     }
-    #btn.alt{
+
+    #btn.alt {
         transition: 0.1s;
-        background-image: url(./IMG/close.png);
+        background-image: url(./IMG/close.svg);
         background-color: transparent;
     }
 

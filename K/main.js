@@ -11,3 +11,5 @@ function ChangeBG(){
     document.getElementById('btn').classList.contains("alt") ? document.getElementById('btn').classList.remove("alt") : document.getElementById('btn').classList.add("alt");
 }
 
+
+// Fim do header
