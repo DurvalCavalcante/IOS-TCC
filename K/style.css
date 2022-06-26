@@ -44,11 +44,8 @@ a:hover {
     display: none;
 }
 
-@media (max-width: 600px) {
-    #btn {
-        display: block;
-    }
 
+@media (max-width: 600px) {
     #menu {
         display: block;
         position: absolute;
@@ -77,13 +74,20 @@ a:hover {
         border-bottom: 2px solid #d9d9d9;
         padding: 20px;
     }
-
-    #btn {
-        padding: 12px;
+    
+    #btn{
+        transition: 0.2s;
+        padding: 13px;
+        background-color: transparent;
         background-image: url(./IMG/open.png);
         background-size: cover;
         border: none;
         cursor: pointer;
+        display: block;
+    }
+    #btn.alt{
+        transition: 0.1s;
+        background-image: url(./IMG/close.png);
         background-color: transparent;
     }
 

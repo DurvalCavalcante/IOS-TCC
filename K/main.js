@@ -1,13 +1,13 @@
-const btn = document.getElementById('btn');
+const btn = document.getElementById('b');
 
-function toggleMenu () {
+function toggleMenu() {
     const nav = document.getElementById('nav');
     nav.classList.toggle('active')
 }
 
-function btnChange(){
-    var i= document.getElementById('btn').style.backgroundImage="url(./IMG/close.png)";
-    }
-
-
 btn.addEventListener('click', toggleMenu);
+
+function ChangeBG(){
+    document.getElementById('btn').classList.contains("alt") ? document.getElementById('btn').classList.remove("alt") : document.getElementById('btn').classList.add("alt");
+}
+
