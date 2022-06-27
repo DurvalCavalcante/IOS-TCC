@@ -108,7 +108,6 @@ header {
     box-shadow: 0 0 20px rgb(0, 0, 0, 0.4);
     column-count: 2;
     column-gap: 40px;
-    /* column-rule: 2px solid black; */
 }
 
 .objetivo div {
@@ -131,9 +130,44 @@ header {
     font-weight: bold;
 }
 
+.inf {
+    padding: 60px 0 468px 0;
+    background: #E7E7E7;
+    text-align: center;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.4);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row: 3;
+    grid-gap: 90px;
+}
+
+.onca{
+    background: #5C5C5C;
+    
+}
+
+.lobo {
+    background: #5C5C5C;
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.mico {
+    background: #5C5C5C;
+    grid-column-start: 1;
+    grid-row-start: 3;
+}
+
 @media screen and (max-width:500px) {
     .card {
         float: none;
         display: block;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .objetivo p {
+        padding: 0 3px 3px 3px;
+        font-size: 8;
     }
 }
