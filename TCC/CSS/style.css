@@ -131,7 +131,7 @@ header {
 }
 
 .inf {
-    padding: 60px 0 468px 0;
+    padding: 60px 0 268px 0;
     background: #E7E7E7;
     text-align: center;
     box-shadow: 0 0 20px rgb(0, 0, 0, 0.4);
@@ -143,19 +143,33 @@ header {
 
 .onca{
     background: #5C5C5C;
-    
+    display: flex;    
 }
 
 .lobo {
     background: #5C5C5C;
     grid-column-start: 2;
     grid-row-start: 2;
+    display: flex;
 }
 
 .mico {
     background: #5C5C5C;
     grid-column-start: 1;
     grid-row-start: 3;
+    display: flex;
+}
+
+.onca div {
+    background: #7c7979;
+}
+
+.lobo div {
+    background: #7c7979;
+}
+
+.mico div {
+    background: #7c7979;
 }
 
 @media screen and (max-width:500px) {
