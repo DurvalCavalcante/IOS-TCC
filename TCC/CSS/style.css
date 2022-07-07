@@ -4,14 +4,23 @@
     box-sizing: border-box;
 }
 
-#header {
-    box-sizing: border-box;
+.main-header{
+    width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header {
+    width: 98%;
+    display: flex;
+    border-radius: 12px;
     align-items: center;
     padding: 1rem;
     height: 70px;
+    transition: 0.3s;
     justify-content: space-between;
-    background-color: #e7e7e7;
+    background-color: #e7e7e77c;
 }
 
 a {
@@ -21,7 +30,8 @@ a {
 }
 
 #menu a:hover {
-    background-color: #7e7e7e7e;
+    background-color: #7e7e7e2c;
+    border-radius: 25px;
 }
 
 #logo {
@@ -34,7 +44,7 @@ a {
 #menu {
     display: flex;
     list-style: none;
-    gap: .5rem;
+    gap: 2rem;
 }
 
 #menu a {
@@ -152,6 +162,12 @@ a {
 }
 
 @media screen and (max-width:600px) {
+    #header{
+        transition: 0.3s;
+        width: 100%;
+        border-radius: 0;
+    }
+    
     .objetivo p {
         padding: 0 3px 3px 3px;
         font-size: 8;
