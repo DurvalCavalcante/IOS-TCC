@@ -11,8 +11,13 @@
     transition:all .2s linear ;
 }
 
+#teste{
+    display: none;
+    background-color: yellow;
+}
+
 .container{
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     padding: 25px;

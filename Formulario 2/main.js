@@ -28,6 +28,27 @@ document.querySelector('.cvv-input').oninput = () =>{
     document.querySelector('.cvv-box').innerText = document.querySelector('.cvv-input').value;
 }
 
-$(document).ready(function(){
-    $('#card').mask('9999-9999-9999-9999');
-})
+function cartao(){
+    document.getElementById('container').style.display="flex";
+    document.getElementById('container').style.justifyContent ="center"
+}
+
+function generateQR(){
+    document.querySelector('#qr-image').style.display = "block";
+    document.querySelector('#img').style.display = "block";
+    document.querySelector('#qr-image .error').innerHTML = "";
+    var foto = document.querySelector('#img')
+    foto.src="unnamed.jpg";   
+    
+    }
+
+function cartao(){
+    document.getElementById('container').style.display="flex";
+    document.getElementById('container').style.justifyContent ="center"
+   
+    var ctn = document.getElementById('container');
+    setTimeout(() => {
+         
+        ctn.style.display = "none";
+    }, 6000);
+}

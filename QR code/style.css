@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ececec;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container3 {
+    padding: 40px 60px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    border: 5px solid;
+    box-shadow: 0 0 15px;
+    flex-direction:row;
+}
+
+.input {
+    padding: 12px 20px;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+#qr-image{
+    display: none;
+}
+
+img{
+    margin-bottom: 20px;
+    width: 100px;
+}
