@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif; /*Hauroa Sans, título // Krylon, texto */
 }
 
 /* body {
@@ -112,7 +113,7 @@ header {
 .objetivo {
     margin: 90px 0;
     padding-bottom: 68px;
-    background: #e7e7e7;
+    background: #7c7c7c;
     text-align: center;
     box-shadow: 0 0 20px rgb(0, 0, 0, 0.4);
     display: grid;
@@ -125,7 +126,7 @@ header {
 }
 
 .objetivo div {
-    background: #e7e7e7;
+    background: hsla(0, 0%, 7%, 0.555);
     margin: 2em 2em 0 2em;
     box-shadow: 0 0 20px rgb(0, 0, 0, 0.4);
 }
@@ -142,6 +143,7 @@ header {
 .objetivo p {
     padding: 0 30px 30px 30px;
     font-weight: bold;
+    color: #d9d9d9;
 }
 
 .objetivo img {
