@@ -12,26 +12,44 @@
     background-size: cover;
 } */
 
-header {
+#header {
     display: flex;
-    justify-content: space-between;
-    padding: 20px;
     align-items: center;
-    flex-wrap: wrap;
-    background: #d9d9d9;
+    padding: 0.5rem;
+    justify-content: space-between;
+    background-color: #e7e7e7;
 }
 
-header img {
-    /* /* left: 2%; */
-    /* position: absolute; */
-    width: 80px;
-    margin-left: 3%;
-}
-
-.header-links a {
-    padding: 10px;
+a {
+    color: black;
     text-decoration: none;
-    margin: 30px;
+    font-family: sans-serif;
+}
+
+#menu a:hover {
+    background-color: #7e7e7e7e;
+}
+
+#logo {
+
+    width: 80px;
+    margin-left: 30px;
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+}
+
+#menu a {
+    display: block;
+    padding: .5rem;
+    margin-right: 10px;
+}
+
+#btn {
+    display: none;
 }
 
 .header-down {
@@ -274,4 +292,59 @@ header img {
 .show {
     -webkit-animation: slideInLeft 0.8s ease-in-out 0.1s forwards;
     animation: slideInLeft 0.8s ease-in-out 0.1s forwards;
+}
+
+@media screen and (max-width:600px) {
+    .objetivo p {
+        padding: 0 3px 3px 3px;
+        font-size: 8;
+    }
+
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0;
+        height: 0;
+        background: #e7e7e7;
+        transition: .4s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #nav.active #menu {
+        height: 50vh;
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #menu a {
+        padding: 1rem 0;
+        margin: 20px 1rem;
+        text-align: center;
+        font-size: 1.2rem;
+        border-bottom: 2px solid #d9d9d9;
+        padding: 20px;
+    }
+
+    #btn {
+        transition: 0.2s;
+        padding: 13px;
+        background-color: transparent;
+        background-image: url(../IMG/open.svg);
+        background-size: cover;
+        border: none;
+        cursor: pointer;
+        display: block;
+    }
+
+    #btn.alt {
+        transition: 0.1s;
+        background-image: url(../IMG/close.svg);
+        background-color: transparent;
+    }
+
+
 }

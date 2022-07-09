@@ -10,14 +10,20 @@
 </head>
 
 <body>
-    <header>
-        <img src="IMG/NEWLOGO1.svg" alt="logo">
-        <nav>
-            <div class="header-links">
-                <a class="home" href="">Início</a>
-                <a class="sobre" href="">Sobre</a>
-                <a class="contato" href="">Contato</a>
-            </div>
+    <header id="header">
+        
+        <a href="#"><img src="./IMG/NEWLOGO1.svg" alt="logo" id="logo"></a>
+        
+        <nav id="nav">
+            
+            <button onclick="toggleMenu();ChangeBG()" id="btn"></button>
+
+            <ul id="menu">
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Doar</a></li>
+            </ul>
+
         </nav>
     </header>
 
