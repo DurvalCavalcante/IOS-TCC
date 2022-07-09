@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel&family=Comfortaa&family=Creepster&family=DM+Sans&family=Kufam:ital,wght@1,500&family=Playfair+Display+SC:ital@1&family=Quicksand:wght@300&display=swap');
+
 * {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
     box-sizing: border-box;
     outline: none;
     border: none;
@@ -8,24 +9,24 @@
     text-transform: uppercase;
 }
 
-button{
+button {
     margin: 0;
     padding: 0;
     display: flex;
-} 
+}
 
-#container{
+#container {
     display: none;
 }
 
 .container2 {
     min-height: 100vh;
-    background: #eee;
+    background: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-flow: column;
-    padding-bottom: 60px;
+    margin-top: 20px;
 }
 
 .container2 form {
@@ -43,7 +44,7 @@ button{
 
 .container2 form .inputbox span {
     display: block;
-    color: #999;
+    color: rgb(68, 68, 68);
     padding-bottom: 5px;
 }
 
@@ -53,7 +54,7 @@ button{
     padding: 10px;
     border-radius: 10px;
     border: 1px solid rgba(0, 0, 0, 3);
-    color: #444;
+    color: #fff;
 }
 
 .container2 form .flexbox {
@@ -147,54 +148,54 @@ button{
     backface-visibility: hidden;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 2);
     transform: perspective(1000px) rotateY(180deg);
-    transition:transform .4s ease-out;
+    transition: transform .4s ease-out;
 }
 
-.container2 .card-container .back .stripe{
+.container2 .card-container .back .stripe {
     background: #000;
     width: 100%;
     margin: 10px 0;
     height: 50px;
 }
 
-.container2 .card-container .back .box{
+.container2 .card-container .back .box {
     padding: 0 20px;
 }
 
-.container2 .card-container .back .box span{
-     color: #Fff;
-     font-size: 15px;
+.container2 .card-container .back .box span {
+    color: black;
+    font-size: 15px;
 }
 
-.container2 .card-container .back .box .cvv-box{
+.container2 .card-container .back .box .cvv-box {
     height: 50px;
     padding: 10px;
     margin-top: 5px;
-    color: #333;
+    color: #fff;
     background: #fff;
     border-radius: 5px;
     width: 100%;
 }
 
 .container2 .card-container .back .box img {
-     margin-top: 30px;
-     height: 30px;
+    margin-top: 30px;
+    height: 30px;
 }
 
 
 
 .container3 {
     padding: 100px 10px;
-    margin: auto;
-    background: #fff;
+    margin:auto;
+    background: rgb(248, 245, 245);
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 5px solid;
-    border-radius: 10px ;
-    box-shadow: 0 0 15px;
+    border-radius: 20px;
+    box-shadow: 4px 10px 15px;
     flex-direction: row;
-    max-width: 60%;
+    max-width: 80%;
+    margin-top: 100px;
 }
 
 .input {
@@ -203,24 +204,26 @@ button{
     margin-bottom: 20px;
 }
 
-#img{
+#img {
     width: 150px;
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
 
-#display-card{
-display:flex ;
-flex-direction:row;
+#display-card {
+    display: flex;
+    flex-direction: row;
 }
 
-.display-img{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   
+.display-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
 }
 
-.div-card{
+.div-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -229,69 +232,78 @@ flex-direction:row;
 
 .noselect {
     -webkit-touch-callout: none;
-      -webkit-user-select: none;
-       -khtml-user-select: none;
-         -moz-user-select: none;
-          -ms-user-select: none;
-              user-select: none;
-          -webkit-tap-highlight-color: transparent;
-  }
-  
-  button {
-      width: 150px;
-      height: 50px;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      background:  #43cea2;
-      border: none;
-      border-radius: 5px;
-      box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
-      background:  #43cea2;
-  }
-  
-  button, button span {
-      transition: 200ms;
-  }
-  
-  button .text {
-      transform: translateX(35px);
-      color: white;
-      font-weight: bold;
-  }
-  
-  button .icon {
-      position: absolute;
-      border-left: 1px solid #ff7b00;
-      transform: translateX(110px);
-      height: 40px;
-      width: 40px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-  }
-  
-  button img {
-      width: 15px;
-      fill: #eee;
-  }
-  
-  button:hover {
-      background: #0099ff;
-  }
-  
-  button:hover .text {
-      color: transparent;
-  }
-  
-  button:hover .icon {
-      width: 150px;
-      border-left: none;
-      transform: translateX(0);
-  }
-  
-  button:focus {
-      outline: none;
-  }
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
 
-  
+button {
+    width: 160px;
+    height: 60px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: #43cea2;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+    background: #43cea2;
+    box-shadow: 1px 5px 5px;
+}
+
+button, button span {
+    transition: 200ms;
+}
+
+button .text {
+    transform: translateX(35px);
+    color: white;
+    font-weight: bold;
+}
+
+button .icon {
+    position: absolute;
+    border-left: 1px solid #ff7b00;
+    transform: translateX(110px);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button img {
+    width: 15px;
+    fill: #eee;
+}
+
+button:hover {
+    background: #0099ff;
+}
+
+button:hover .text {
+    color: transparent;
+}
+
+button:hover .icon {
+    width: 150px;
+    border-left: none;
+    transform: translateX(0);
+}
+
+button:focus {
+    outline: none;
+}
+
+.texte{
+    margin-top:30px;
+    
+}
+
+.text{
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 5px;
+}

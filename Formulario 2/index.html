@@ -10,131 +10,148 @@
 </head>
 
 <body>
-
+    <!--Botões-->
     <div class="container3">
 
+        <div class="titulo">
 
-        <div class="display-img">
+            <div class="display-img">
 
-            <div class="div-img">
-                <button type="button" onclick="generateQR()">
-                    Gerar QRcode
-                </button>
+                <div class="div-img">
 
-                <div id="qr-image">
+                    <button id="display-card" class="text" type="button" onclick="generateQR()">
+                        <span id="text2" class="text">PIX</span>
+                        <span class="icon"><img " src=" icon2.png" width="20" height="20" viewBox="0 0 24 24">
+                            <path
+                                d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
+                        </span>
+                    </button>
+             
+                    <div id="timeout">
 
-                    <span class="error"></span>
-                    <img src="" id="img" />
+                    <div id="qr-image">
+
+                        <span class="error"></span>
+                        <img src="" id="img" />
+                    </div>
+                </div>
                 </div>
 
-            </div>
-            <div class="div-card">
                 <div class="div-card">
-                    <button id="display-card" class="text"  onclick="cartao()"><span class=>Cartão</span>
-                        <span class="icon"><img src="icon.png" width="24" height="24" viewBox="0 0 24 24">
-                            <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></span>
-                    </button>
+                    <div class="div-card">
+                        <button id="display-card" class="texte" onclick="cartao()"><span class="text">Cartão</span>
+                            <span class="icon"><img src="icon.png" width="24" height="24" viewBox="0 0 24 24">
+                                <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
+                            </span>
+                        </button>
+                    </div>
 
 
+                    <div id="teste">
+                        <div id="container">
 
-                <div id="teste">
-                    <div id="container">
-                        <div class="container2">
-                            <div class="card-container">
+                           
+                            <!--//////Cartão//////-->
 
-                                <div class="front">
-                                    <div class="image">
-                                        <img src="chip.png" alt="">
-                                        <img src="visa.png" alt="">
-                                    </div>
+                            <div class="container2">
+                                <div class="card-container">
 
-                                    <div class="card-number-box">#### - #### - #### - ####</div>
-                                    <div class="flexbox">
-                                        <div class="box">
-                                            <span>Titular do cartão</span>
-                                            <div class="card-holder-name">Nome completo</div>
+                                    <div class="front">
+                                        <div class="image">
+                                            <img src="chip.png" alt="">
+                                            <img src="visa.png" alt="">
                                         </div>
-                                        <div class="box">
-                                            <span>Validade</span>
-                                            <div class="expiration">
-                                                <span class="exp-month">mês</span>
-                                                <span class="exp-year">/ ano</span>
+
+                                        <div class="card-number-box">#### - #### - #### - ####</div>
+                                        <div class="flexbox">
+                                            <div class="box">
+                                                <span>Titular do cartão</span>
+                                                <div class="card-holder-name">Nome completo</div>
+                                            </div>
+                                            <div class="box">
+                                                <span>Validade</span>
+                                                <div class="expiration">
+                                                    <span class="exp-month">mês</span>
+                                                    <span class="exp-year">/ ano</span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <div class="back">
-                                    <div class="stripe"></div>
-                                    <div class="box">
-                                        <span>cvv</span>
-                                        <div class="cvv-box"></div>
-                                        <img src="visa.png" alt="">
+                                    <div class="back">
+                                        <div class="stripe"></div>
+
+                                        <div class="box">
+                                            <span>cvv</span>
+                                            <div class="cvv-box"></div>
+                                            <img src="visa.png" alt="">
+                                        </div>
                                     </div>
+
                                 </div>
 
+                                <form action="">
+
+                                    <div class="inputbox">
+                                        <span>Numero do cartão</span>
+                                        <input type="text" maxlenght="16" class="card-number-input" id="card">
+                                    </div>
+
+                                    <div class="inputbox">
+                                        <span>Titular do cartão</span>
+                                        <input type="text" class="card-holder-input">
+                                    </div>
+
+                                    <div class="flexbox">
+                                        <div class="inputbox">
+                                            <span>Validade: Mês</span>
+                                            <select name="" id="" class="month-input">
+                                                <option value="Mês" selected disabled>Mês</option>
+                                                <option value="01">01</option>
+                                                <option value="02">02</option>
+                                                <option value="03">03</option>
+                                                <option value="04">04</option>
+                                                <option value="05">05</option>
+                                                <option value="06">06</option>
+                                                <option value="07">07</option>
+                                                <option value="08">08</option>
+                                                <option value="09">09</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="inputbox">
+                                            <span>Validade: Ano</span>
+                                            <select name="" id="" class="year-input">
+                                                <option value="Ano" selected disabled>Ano</option>
+                                                <option value="2021">2021</option>
+                                                <option value="2022">2022</option>
+                                                <option value="2023">2023</option>
+                                                <option value="2024">2024</option>
+                                                <option value="2025">2025</option>
+                                                <option value="2026">2026</option>
+                                                <option value="2027">2027</option>
+                                                <option value="2028">2028</option>
+                                                <option value="2029">2029</option>
+                                                <option value="2030">2030</option>
+
+                                            </select>
+                                        </div>
+                                        <div class="inputbox">
+                                            <span>cvv</span>
+                                            <input type="text" maxlength="4" class="cvv-input">
+                                        </div>
+                                    </div>
+                                    <input type="submit" value="Doar!" class="submit-btn">
+                                </form>
                             </div>
-
-                            <form action="">
-                                <div class="inputbox">
-                                    <span>Numero do cartão</span>
-                                    <input type="text" maxlenght="16" class="card-number-input" id="card">
-                                </div>
-                                <div class="inputbox">
-                                    <span>Titular do cartão</span>
-                                    <input type="text" class="card-holder-input">
-                                </div>
-
-                                <div class="flexbox">
-                                    <div class="inputbox">
-                                        <span>Validade: Mês</span>
-                                        <select name="" id="" class="month-input">
-                                            <option value="Mês" selected disabled>Mês</option>
-                                            <option value="01">01</option>
-                                            <option value="02">02</option>
-                                            <option value="03">03</option>
-                                            <option value="04">04</option>
-                                            <option value="05">05</option>
-                                            <option value="06">06</option>
-                                            <option value="07">07</option>
-                                            <option value="08">08</option>
-                                            <option value="09">09</option>
-                                            <option value="10">10</option>
-                                            <option value="11">11</option>
-                                            <option value="12">12</option>
-                                        </select>
-                                    </div>
-
-                                    <div class="inputbox">
-                                        <span>Validade: Ano</span>
-                                        <select name="" id="" class="year-input">
-                                            <option value="Ano" selected disabled>Ano</option>
-                                            <option value="2021">2021</option>
-                                            <option value="2022">2022</option>
-                                            <option value="2023">2023</option>
-                                            <option value="2024">2024</option>
-                                            <option value="2025">2025</option>
-                                            <option value="2026">2026</option>
-                                            <option value="2027">2027</option>
-                                            <option value="2028">2028</option>
-                                            <option value="2029">2029</option>
-                                            <option value="2030">2030</option>
-
-                                        </select>
-                                    </div>
-                                    <div class="inputbox">
-                                        <span>cvv</span>
-                                        <input type="text" maxlength="4" class="cvv-input">
-                                    </div>
-                                </div>
-                                <input type="submit" value="Doar!" class="submit-btn">
-                            </form>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <script src="main.js"></script>
+            <script src="main.js"></script>
 
 </body>
 

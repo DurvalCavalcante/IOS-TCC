@@ -36,10 +36,16 @@ function cartao(){
 function generateQR(){
     document.querySelector('#qr-image').style.display = "block";
     document.querySelector('#img').style.display = "block";
-    document.querySelector('#qr-image .error').innerHTML = "";
+    document.querySelector('#timeout').style.display = "flex";
+    
     var foto = document.querySelector('#img')
     foto.src="unnamed.jpg";   
-    
+   
+    var qr = document.getElementById('timeout');
+    setTimeout(() => {
+
+        qr.style.display = "none";
+    }, 2000);
     }
 
 function cartao(){
@@ -50,5 +56,5 @@ function cartao(){
     setTimeout(() => {
          
         ctn.style.display = "none";
-    }, 6000);
+    }, 2000);
 }
