@@ -21,6 +21,13 @@ header {
     background: #d9d9d9;
 }
 
+header img {
+    /* /* left: 2%; */
+    /* position: absolute; */
+    width: 80px;
+    margin-left: 3%;
+}
+
 .header-links a {
     padding: 10px;
     text-decoration: none;
