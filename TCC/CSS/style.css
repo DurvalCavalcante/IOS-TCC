@@ -2,22 +2,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif; /*Hauroa Sans, título // Krylon, texto */
+    font-family: sans-serif;
+    /*Hauroa Sans, título // Krylon, texto */
 }
 
-/* body {
-    background-image: url(../IMG/9zly_8ztc_210511.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
+header {
+    background-color: #e7e7e7;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.4);
+}
 
 #header {
     display: flex;
     align-items: center;
     padding: 0.5rem;
     justify-content: space-between;
-    background-color: #e7e7e7;
+
 }
 
 a {
@@ -31,8 +30,7 @@ a {
 }
 
 #logo {
-
-    width: 80px;
+    width: 120px;
     margin-left: 30px;
 }
 
@@ -53,10 +51,9 @@ a {
 }
 
 .header-down {
+    margin-top: 60px;
     padding: 60px 0 168px 0;
-    background: #e7e7e7;
     text-align: center;
-    box-shadow: 0 0 20px rgb(0, 0, 0, 0.4);
 }
 
 .header-down h1 {
@@ -121,8 +118,10 @@ a {
     display: block;
     width: 100%;
     height: 100%;
-    max-width: 500px;
+    max-width: 300px;
     border-radius: 4px;
+    margin-left: 80px;
+    padding: 10px;
 }
 
 .card h1 {
@@ -138,7 +137,7 @@ a {
 .objetivo {
     margin: 90px 0;
     padding-bottom: 68px;
-    background: #7c7c7c;
+    background: #e7e7e7;
     text-align: center;
     box-shadow: 0 0 20px rgb(0, 0, 0, 0.4);
     display: grid;
@@ -168,7 +167,6 @@ a {
 .objetivo p {
     padding: 0 30px 30px 30px;
     font-weight: bold;
-    color: #d9d9d9;
 }
 
 .objetivo img {
@@ -283,6 +281,7 @@ a {
         opacity: 0.1;
         transform: translate3d(-100%, 0, 0);
     }
+
     100% {
         opacity: 1;
         transform: translate3d(0, 0, 0);
@@ -304,7 +303,7 @@ a {
         display: block;
         position: absolute;
         width: 100%;
-        top: 70px;
+        top: 110px;
         right: 0;
         height: 0;
         background: #e7e7e7;
@@ -331,7 +330,7 @@ a {
 
     #btn {
         transition: 0.2s;
-        padding: 13px;
+        padding: 14px;
         background-color: transparent;
         background-image: url(../IMG/open.svg);
         background-size: cover;
