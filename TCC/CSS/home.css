@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 header {
@@ -58,20 +58,20 @@ header {
 }
 
 .header-down {
-    margin-top: 60px;
+    margin-top: 30px;
     padding: 60px 0 168px 0;
     text-align: center;
 }
 
 .header-down h1 {
     font-size: 34px;
-    padding-bottom: 120px;
+    padding-bottom: 90px;
 }
 
 .header-down p {
     font-size: 18px;
     padding-top: 30px;
-    padding-bottom: 120px;
+    padding-bottom: 90px;
 }
 
 .header-down button {
@@ -292,3 +292,22 @@ footer{
 }
 
 /* Footer Fim */
+
+.sobre {
+    width: 98%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.sobre h1 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.sobre p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 30px;
+}
