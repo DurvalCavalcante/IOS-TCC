@@ -9,7 +9,7 @@ footer{
     position: fixed;
     bottom: 0px;
     width: 100%;
-    background: rgb(0, 0, 0);
+    background: rgb(12, 12, 12);
 }
 .main-content{
     display: flex;
@@ -32,7 +32,7 @@ footer{
     content: '';
     width: 15%;
     height: 2px;
-    background: #f12020;
+    background: #236CA7;
     top: -10px;
 }
 .box .content:before{
@@ -60,7 +60,7 @@ footer{
     transition: 0.3s;
 }
 .left .content .social a span:hover{
-    background: #f12020;
+    background: #236CA7;
 }
 .left .content p{
     text-align: justify;
@@ -77,7 +77,7 @@ footer{
     cursor: pointer;
 }
 .center .content .fas:hover{
-    background: #f12020;
+    background: #236CA7;
 }
 .center .content .text{
     font-size: 17px;
@@ -93,7 +93,7 @@ footer{
 .right form input, .right form textarea{
     width: 100%;
     font-size: 17px;
-    background: #151515;
+    background: #000000;
     padding-left: 10px;
     border: 1px solid #222222;
 }
@@ -115,7 +115,7 @@ footer{
 .right form .btn button{
     height: 40px;
     width: 100%;
-    background: #f12020;
+    background: #236CA7;
     font-size: 17px;
     font-weight: 500;
     cursor: pointer;
@@ -134,11 +134,16 @@ footer{
     color: #656565;
 }
 .bottom .center a{
-    color: #f12020;
+    color: #236CA7;
     text-decoration: none;
 }
 .bottom .center a:hover{
     text-decoration: underline;
+}
+
+.logo{
+    width: 150px;
+    margin-left: 20px;
 }
 @media screen and (max-width: 900px){
     footer{
