@@ -276,23 +276,6 @@ a {
     }
 }
 
-@keyframes slideInLeft {
-    0% {
-        opacity: 0.1;
-        transform: translate3d(-100%, 0, 0);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-    }
-}
-
-.show {
-    -webkit-animation: slideInLeft 0.8s ease-in-out 0.1s forwards;
-    animation: slideInLeft 0.8s ease-in-out 0.1s forwards;
-}
-
 @media screen and (max-width:600px) {
     .objetivo p {
         padding: 0 3px 3px 3px;

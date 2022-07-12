@@ -1,13 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
 }
 
 header {
-    background-color: #e7e7e7;
+    background-color: #F98C40;
     box-shadow: 0 0 20px rgb(0, 0, 0, 0.4);
+    color: #121212;
 }
 
 #header {
@@ -30,7 +37,7 @@ header {
 }
 
 #menu ul li a {
-    color: #000;
+    color: #121212;
     text-decoration: none;
 }
 
@@ -38,7 +45,7 @@ header {
     content: '';
     width: 0%;
     height: 2px;
-    background: #26456E;
+    background: #D04A07;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -72,6 +79,7 @@ header {
     font-size: 18px;
     padding-top: 30px;
     padding-bottom: 90px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .header-down button {
@@ -81,17 +89,17 @@ header {
     cursor: pointer;
     outline: none;
     color: #fff;
-    background-color: #26456E;
+    background-color: #7B3014;
     border: none;
     border-radius: 15px;
 }
 
 .header-down button:hover {
-    background-color: #236CA7;
+    background-color: #D04A07;
 }
 
 .header-down button:active {
-    background-color: #236CA7;
+    background-color: #D04A07;
     transform: translateY(10px);
 }
 
@@ -102,6 +110,7 @@ header {
     margin: auto;
     text-align: center;
     padding-top: 100px;
+    color: #121212;
 }
 
 .resumo h1 {
@@ -114,6 +123,7 @@ header {
     font-weight: 300;
     line-height: 22px;
     padding: 30px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .row {
@@ -124,7 +134,7 @@ header {
 
 .resumo-col {
     flex-basis: 24%;
-    background: #e7e7e7;
+    background: #d9d9d9;
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 4px;
@@ -139,7 +149,7 @@ header {
 }
 
 .resumo-col:hover {
-    box-shadow: 0 0 20px 0 rgb(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px 0 rgb(0, 0, 0, 0.4);
 }
 
 @media (max-width: 700px) {
@@ -155,8 +165,9 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #e7e7e7;
+    background-color: #d9d9d9;
     box-shadow: 0 0 20px rgb(0, 0, 0, 0.4);
+    color: #121212;
 }
 
 .org {
@@ -167,22 +178,23 @@ header {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    color: #121212;
 }
 
 .org .animal {
     max-width: 300px;
-    height: 220px;
+    height: 200px;
     position: relative;
     margin: 30px 10px;
     padding: 20px 15px;
-    background: #7e7e7e7e;
+    background: #F98C40;
     border-radius: 10px;
     flex-direction: column;
     transition: 0.5s ease-in-out;
 }
 
 .org .animal:hover {
-    height: 500px;
+    height: 549px;
 }
 
 .org .animal .imagem {
@@ -207,6 +219,10 @@ header {
     transition: 0.3s ease-in-out;
 }
 
+.org .animal .texto p {
+    margin-top: 6px;
+}
+
 .org .animal:hover .texto {
     visibility: visible;
     transition-delay: 0.3s;
@@ -217,11 +233,11 @@ header {
 
 footer{
     margin-top: 10%;
-    background: #26456E;
+    background: #7B3014;
     height: auto;
     width: 100vw;
     padding-top: 40px;
-    color: #fff;
+    color: #D9D9D9;
 }
 
 .footer-container {
@@ -244,6 +260,7 @@ footer{
     margin: 10px auto;
     line-height: 28px;
     font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .socials {
@@ -269,11 +286,11 @@ footer{
 }
 
 .socials a:hover i {
-    color: #236CA7;
+    color: #D04A07;
 }
 
 .footer-btn {
-    background: #236CA7;
+    background: #D04A07;
     width: 100vw;
     padding: 20px 0;
     text-align: center;
@@ -283,6 +300,7 @@ footer{
     font-size: 14px;
     word-spacing: 2px;
     text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .footer-btn span {
@@ -310,4 +328,58 @@ footer{
     font-weight: 300;
     line-height: 22px;
     padding: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Sobre Fim */
+
+@media (max-width: 600px) {
+
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 140px;
+        right: 0;
+        height: 0;
+        background: #F98C40;
+        transition: .4s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #nav.active #menu {
+        height: 50vh;
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #menu a {
+        margin: 10px 9rem;
+        display: flex;
+        text-align: center;
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    #btn {
+        margin-right: 1rem;
+        transition: 0.2s;
+        padding: 14px;
+        background-color: transparent;
+        background-image: url(../IMG/open.svg);
+        background-size: cover;
+        border: none;
+        cursor: pointer;
+        display: block;
+    }
+
+    #btn.alt {
+        transition: 0.1s;
+        background-image: url(../IMG/close.svg);
+        background-color: transparent;
+    }
+
+
 }
