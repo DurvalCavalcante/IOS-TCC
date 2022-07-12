@@ -10,17 +10,22 @@
     margin: 0;
 }
 
-
 body{
     background: rgb(245, 245, 245);
 
 }
 
-
 #container {
     display: none;
 }
 
+
+
+ /* ========================================================*/ 
+
+
+
+ /*Personalização do cartão*/ 
 .container2 {
     background: #d04a07;
     display: flex;
@@ -182,9 +187,15 @@ body{
     margin-top: 30px;
     height: 30px;
 }
+ /* Fim da personalização do cartão*/ 
+
+
+ 
+ /* ========================================================*/ 
 
 
 
+  /*Pesonalização da area em volta aos botões*/ 
 .container3 {
     padding: 50px 10px;
     margin:auto;
@@ -199,6 +210,15 @@ body{
     margin-top: 100px;
 }
 
+ /*Fim da personalização da area em volta dos botões*/ 
+
+
+ 
+ /* ========================================================*/ 
+
+
+
+  /*Começo da personalização dos botões */ 
 .input {
     padding: 12px 20px;
     width: 300px;
@@ -324,6 +344,15 @@ button:focus {
     flex-direction: column;
 }
 
+
+ /*Fim da personalização dos botões */ 
+
+
+ /* ========================================================*/ 
+
+
+ /*Personalização do footer */ 
+
 footer{
     margin-top: 11%;
     background: #F98C40;
@@ -436,6 +465,12 @@ footer{
 .doação{
 text-align: center;
 }
+ 
+/*Fim da personalização do footer */ 
+
+
+
+ /* ========================================================*/ 
 
 
 @media(max-widht:600px){
