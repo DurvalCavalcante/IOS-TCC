@@ -39,13 +39,13 @@ function generateQR(){
     document.querySelector('#timeout').style.display = "flex";
     
     var foto = document.querySelector('#img')
-    foto.src="unnamed.jpg";   
+    foto.src="IMG/Obrigado_por_doar.png";   
    
     var qr = document.getElementById('timeout');
     setTimeout(() => {
 
         qr.style.display = "none";
-    }, 2000);
+    }, 20000);
     }
 
 function cartao(){
@@ -56,5 +56,5 @@ function cartao(){
     setTimeout(() => {
          
         ctn.style.display = "none";
-    }, 2000);
+    }, 60000);
 }

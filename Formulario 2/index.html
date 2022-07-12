@@ -5,43 +5,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Formulario</title>
 </head>
 
 <body>
-    <!--Botões-->
-    <div class="container3">
+    <main>
+        <!--Botões-->
+        <img class="img-logo" src="IMG/NEWLOGO.svg">
+        <div class="container3">
 
-        <div class="titulo">
 
             <div class="display-img">
 
                 <div class="div-img">
 
+
                     <button id="display-card" class="text" type="button" onclick="generateQR()">
                         <span id="text2" class="text">PIX</span>
-                        <span class="icon"><img " src=" icon2.png" width="20" height="20" viewBox="0 0 24 24">
+                        <span class="icon"><img src=" IMG/icon2.png" width="20" height="20" viewBox="0 0 24 24">
                             <path
                                 d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
                         </span>
                     </button>
-             
+
                     <div id="timeout">
 
-                    <div id="qr-image">
+                        <div id="qr-image">
 
-                        <span class="error"></span>
-                        <img src="" id="img" />
+                            <span class="error"></span>
+                            <img src="" id="img" />
+                        </div>
                     </div>
-                </div>
                 </div>
 
                 <div class="div-card">
                     <div class="div-card">
                         <button id="display-card" class="texte" onclick="cartao()"><span class="text">Cartão</span>
-                            <span class="icon"><img src="icon.png" width="24" height="24" viewBox="0 0 24 24">
-                                <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
+                            <span class="icon"><img src="IMG/icon.png" width="24" height="24" viewBox="0 0 24 24">
+                                <path
+                                    d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
                             </span>
                         </button>
                     </div>
@@ -50,7 +54,7 @@
                     <div id="teste">
                         <div id="container">
 
-                           
+
                             <!--//////Cartão//////-->
 
                             <div class="container2">
@@ -58,8 +62,8 @@
 
                                     <div class="front">
                                         <div class="image">
-                                            <img src="chip.png" alt="">
-                                            <img src="visa.png" alt="">
+                                            <img src="IMG/chip.png" alt="">
+                                            <img src="IMG/visa.png" alt="">
                                         </div>
 
                                         <div class="card-number-box">#### - #### - #### - ####</div>
@@ -84,7 +88,7 @@
                                         <div class="box">
                                             <span>cvv</span>
                                             <div class="cvv-box"></div>
-                                            <img src="visa.png" alt="">
+                                            <img src="IMG/visa.png" alt="">
                                         </div>
                                     </div>
 
@@ -94,7 +98,8 @@
 
                                     <div class="inputbox">
                                         <span>Numero do cartão</span>
-                                        <input type="text" maxlenght="16" class="card-number-input" id="card">
+                                        <input type="text" maxlenght="16" class="card-number-input" id="card"
+                                            placeholder="#### - #### - #### - ####">
                                     </div>
 
                                     <div class="inputbox">
@@ -149,9 +154,31 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <script src="main.js"></script>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <h3>OPASE</h3>
+            <p class="doação">Obrigado por doar!</p>
+
+            <ul class="socials">
+                <li><a href=""><i class="fa-brands fa-facebook-square"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-twitter-square"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="footer-btn">
+            <p>copyright &copy;2022 Organização Protetora dos Animais Silvestres em Extinção - OPASE
+            </p>
+        </div>
+    </footer>
+
+
+
+
+    <script src="main.js"></script>
 
 </body>
 
