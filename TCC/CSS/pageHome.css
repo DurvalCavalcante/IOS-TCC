@@ -106,11 +106,12 @@ header {
 /* Header Fim */
 
 .resumo {
-    width: 98%;
+    width: 100%;
     margin: auto;
     text-align: center;
     padding-top: 100px;
     color: #121212;
+    margin-bottom: 15%;
 }
 
 .resumo h1 {
@@ -119,54 +120,34 @@ header {
 }
 
 .resumo p {
-    font-size: 16px;
+    margin-top: 2%;
+    font-size: 22px;
     font-weight: 300;
     line-height: 22px;
     padding: 30px;
     font-family: 'Montserrat', sans-serif;
 }
 
-.row {
-    margin-top: 5%;
+.aspas:before {
+    content: "\f10d";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 28px;
+    color: rgba(152,152,152,.3);
     display: flex;
-    justify-content: space-around;
-}
-
-.resumo-col {
-    flex-basis: 24%;
-    background: #d9d9d9;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    padding: 20px 4px;
-    box-sizing: border-box;
-    transition: 0.5s;
-}
-
-.resumo-col h3 {
-    text-align: center;
-    font-weight: 600;
-    margin: 10px 0;
-}
-
-.resumo-col:hover {
-    box-shadow: 0 0 20px 0 rgb(0, 0, 0, 0.4);
-}
-
-@media (max-width: 700px) {
-    .row {
-        flex-direction: column;
-    }
+    justify-content: flex-start;
+    margin-bottom: 15px;
 }
 
 /* Resumo Fim */
 
 .cards-animals {
+    background-color: #f2f2f2;
     padding-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #d9d9d9;
-    box-shadow: 0 0 20px rgb(0, 0, 0, 0.4);
     color: #121212;
 }
 
@@ -194,7 +175,7 @@ header {
 }
 
 .org .animal:hover {
-    height: 549px;
+    height: 564px;
 }
 
 .org .animal .imagem {
@@ -231,89 +212,9 @@ header {
 
 /* Cards Fim */
 
-footer{
-    margin-top: 10%;
-    background: #7B3014;
-    height: auto;
-    width: 100vw;
-    padding-top: 40px;
-    color: #D9D9D9;
-}
-
-.footer-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-
-.footer-container h3 {
-    font-size: 1.8rem;
-    font-weight: 400;
-    text-decoration: none;
-    line-height: 3rem;
-}
-
-.footer-container p {
-    max-width: 500px;
-    margin: 10px auto;
-    line-height: 28px;
-    font-size: 14px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.socials {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 1rem 0 3rem 0;
-}
-
-.socials li {
-    margin: 0 10px;
-}
-
-.socials a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.socials a i {
-    font-size: 1.1rem;
-    transition: color .4s ease;
-}
-
-.socials a:hover i {
-    color: #D04A07;
-}
-
-.footer-btn {
-    background: #D04A07;
-    width: 100vw;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.footer-btn p {
-    font-size: 14px;
-    word-spacing: 2px;
-    text-transform: capitalize;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.footer-btn span {
-    text-transform: uppercase;
-    opacity: .4;
-    font-weight: 200;
-}
-
-/* Footer Fim */
-
 .sobre {
     width: 98%;
-    margin: auto;
+    margin: 10% auto 15% auto;
     text-align: center;
     padding-top: 100px;
 }
@@ -332,6 +233,72 @@ footer{
 }
 
 /* Sobre Fim */
+
+footer {
+    padding: 40px 0;
+    background-color: #D04A07;
+}
+
+footer .social {
+    text-align: center;
+    padding-bottom: 25px;
+    color: #fff;
+
+}
+
+footer .social h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+footer .social p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer .copyright {
+    background: #D04A07;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .copyright p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer .copyright span {
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+    color: #fff;
+}
+
+footer .social a {
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid #CCC;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+
+footer .social a:hover {
+    opacity: 0.9;
+}
+
+/* Footer Fim */
 
 @media (max-width: 600px) {
 
