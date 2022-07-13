@@ -1,3 +1,5 @@
+AOS.init();
+
 const btn = document.getElementById('b');
 
 function toggleMenu() {

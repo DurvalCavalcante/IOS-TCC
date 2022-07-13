@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="../CSS/pageHome.css">
+    <title>Page Home</title>
+</head>
+
+<body>
+    <header>
+        <div id="header">
+            <a href="pageHome.html"><img src="../IMG/NEWLOGO.svg" alt="logo" id="logo"></a>
+
+            <nav id="nav">
+
+                <button onclick="toggleMenu();ChangeBG()" id="btn"></button>
+
+                <div id="menu">
+                    <ul>
+                        <li><a href="pageHome.html">Início</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <section class="header-down">
+            <h1>Organização Protetora dos Animais Silvestres em Extinção - OPASE</h1>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus repudiandae corporis tempora, quas
+                voluptatibus autem sapiente magni eaque ut, recusandae commodi quia. Quidem minus consequatur soluta
+                aperiam
+                perferendis veritatis consectetur assumenda modi quibusdam laboriosam hic neque, facere maiores vel,
+                doloribus voluptatem aliquam corporis dolor excepturi temporibus laudantium deleniti numquam!
+                Consectetur!
+            </p>
+            <button>Doe Aqui!</button>
+        </section>
+
+    </header>
+
+    <main>
+        <section class="resumo">
+            <div>
+                <h1>Sobre a ONG</h1>
+
+                <p class="aspas">
+                    Organização Protetora dos Animais Silvestres em Extinção (OPASE) é uma organização
+                    não-governamental, sem fins lucrativos, fundada em janeiro de 2020 para oferecer
+                    auxílio aos animais necessitados que estão em extinsão. Nossa missão sempre foi
+                    a de mudar a realidade destes que muitas vezes estão completamente indefesos, vítimas da crueldade e
+                    do abuso, enquanto tentam sobreviver sem proteção. Nós lutamos para defender seus interesses,
+                    realizando procedimentos veterinários à animais de tutores, protetores, e/ou de abrigos, incluindo
+                    resgates de animais, recuperação, campanhas de doações de rações, medicamentos e assistência
+                    veterinária. Nosso trabalho, no entanto, não se resume apenas nisso. Somos a voz dos animais,
+                    cuidamos atualmente de mais de 300 animais entre Onça-Pintada, Mico-Leão-Dourado e Lobo-Guará,
+                    vivendo em um ambiente seguro de todos os perigos.
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="cards-animals">
+            <div class="org">
+                <div class="animal" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <div class="imagem">
+                        <img src="../IMG/Onça-Pintada.jpg" alt="onca" width="1269px">
+                    </div>
+
+                    <div class="texto">
+                        <h2>ONÇA-PINTADA</h2>
+
+                        <p>
+                            A Onça-Pintada ou Jaguar, também conhecida como Onça-Preta, é uma espécie de mamífero
+                            carnívoro da família dos felídeos encontrada nas Américas. É o terceiro maior felino do
+                            mundo, após o Tigre e o Leão, e o maior do continente americano.
+                        </p>
+                        <p><strong>Peso:</strong> 56 – 96 kg (Adulto)</p>
+                        <p><strong>Estado de Conservação:</strong> Quase ameaçada (Decrescentes)</p>
+                        <p><strong>Expectativa de Vida:</strong> 12 – 15 anos (na natureza)</p>
+                    </div>
+                </div>
+
+                <div class="animal" data-aos="fade-down" data-aos-easing="linear" data-aos-offset="300">
+                    <div class="imagem">
+                        <img src="../IMG/Lobo-Guará.jpg" alt="lobo">
+                    </div>
+
+                    <div class="texto">
+                        <h2>LOBO-GUARÁ</h2>
+
+                        <p>
+                            Atualmente estampado na lendária nota de 200 reais, o lobo-guará (Chrysocyon brachyurus) é o
+                            maior canídeo da América do Sul. Nativo do Cerrado, tem uma população estimada em 24 mil
+                            indivíduos no Brasil. A espécie é considerada como vulnerável à extinção, de acordo com o
+                            Ministério do Meio Ambiente.
+                        </p>
+                        <p><strong>Peso:</strong> 23 kg (Macho, Adulto)</p>
+                        <p><strong>Estado de Conservação:</strong> Quase ameaçada</p>
+                        <p><strong>Expectativa de Vida:</strong> 12 – 15 anos (na natureza)</p>
+                    </div>
+                </div>
+
+                <div class="animal" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <div class="imagem">
+                        <img src="../IMG/Mico-Leão-Dourado.jpg" alt="mico" width="1269px">
+                    </div>
+
+                    <div class="texto">
+                        <h2>MICO-LEÃO-DOURADO</h2>
+
+                        <p>
+                            O mico-leão-dourado é um primata endêmico do Brasil, da família Callitrichidae e gênero
+                            Leontopithecus. Ocorre exclusivamente na Mata Atlântica brasileira, no estado do Rio de
+                            Janeiro, mas alguns autores já consideraram sua ocorrência no sul do Espírito Santo.
+                        </p>
+                        <p><strong>Peso:</strong> 540 g (estimado)</p>
+                        <p><strong>Estado de Conservação:</strong> Em perigo (Estável)</p>
+                        <p><strong>Expectativa de Vida:</strong> 8 anos (na natureza)</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="sobre">
+            <div>
+                <h1>Informação</h1>
+                <p class="inf-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi laudantium aperiam deserunt
+                    asperiores nihil itaque non sequi, magni numquam et impedit incidunt recusandae libero ab
+                    repellendus dignissimos ex optio cupiditate quaerat? Fugit, ut molestiae doloremque adipisci
+                    dolorum, provident, voluptatem debitis obcaecati nam veritatis suscipit. Velit cum tempore nesciunt,
+                    facere dolores, animi commodi deleniti maiores ex blanditiis nemo. Totam veniam repellat autem.
+                    Deleniti quasi animi alias placeat repudiandae obcaecati labore magnam ipsa, perferendis iure. Eaque
+                    libero ex veritatis, facere eveniet suscipit laborum? Dolore, natus! Corrupti aspernatur optio
+                    accusantium eos animi impedit! Mollitia, temporibus? Alias id quae repellendus, accusamus nesciunt
+                    ea animi.
+                </p>
+            </div>
+        </section>
+
+        <footer>
+            <div class="social">
+                <h3>OPASE</h3>
+                <p>Organização Protetora dos Animais Silvestres em Extinção</p>
+
+                <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+
+            </div>
+
+            <div class="copyright">
+                <p>&copy; OPASE <span> - Todos os Direitos Reservados - 2022</span>
+                </p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../JS/home.js"></script>
+</body>
+
+</html>

@@ -5,29 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="../CSS/style.css">
     <title>TCC</title>
 </head>
 
 <body>
-    <header id="header">
-        
-        <a href="#"><img src="./IMG/NEWLOGO1.svg" alt="logo" id="logo"></a>
-        
-        <nav id="nav">
+    <header>        
+        <div id="header">
+            <a href="#"><img src="../IMG/NEWLOGO.svg" alt="logo" id="logo"></a>
             
-            <button onclick="toggleMenu();ChangeBG()" id="btn"></button>
+            <nav id="nav">
+            
+                <button onclick="toggleMenu();ChangeBG()" id="btn"></button>
+                <ul id="menu">
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Doar</a></li>
+                </ul>
+            </nav>
+        </div>
 
-            <ul id="menu">
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="#">Doar</a></li>
-            </ul>
-
-        </nav>
-    </header>
-
-    <main>
         <section class="header-down">
             <h1>Organização Protetora dos Animais Silvestres em Extinção - OPASE</h1>
             <p>
@@ -40,12 +37,13 @@
             </p>
             <button>Doe Aqui!</button>
         </section>
+    </header>
 
-
+    <main>
         <section class="section">
             <div class="card">
                 <div class="coluna-esquerda">
-                    <img src="IMG/Onça-Pintada.jpg" alt="onça">
+                    <img src="../IMG/NEWLOGO1.svg" alt="newLogo">
                 </div>
 
                 <div class="coluna-direita">
@@ -81,16 +79,16 @@
                 </p>
             </div>
 
-            <img src="IMG/onca_opase.png">
+            <img src="../IMG/onca_opase.png">
 
         </section>
 
         <section class="inf">
-            <div class="onca" id="ani">
+            <div class="onca">
                 <div>
                     <h2>Nome Do Animal</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam, nostrum!</p>
-                    <img src="IMG/3500_1_09.jpg" alt="m">
+                    <img src="../IMG/3500_1_09.jpg" alt="m">
                 </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi architecto soluta sit obcaecati sunt
                     cumque blanditiis maiores dignissimos repellendus aliquam.</p>
@@ -100,17 +98,17 @@
                 <div>
                     <h2>Nome Do Animal</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam, nostrum!</p>
-                    <img src="IMG/3500_1_09.jpg" alt="mm">
+                    <img src="../IMG/3500_1_09.jpg" alt="mm">
                 </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda doloremque voluptatum cum
                     molestias neque fugiat expedita iusto voluptates optio vero!</p>
             </div>
 
-            <div class="mico" id="ani">
+            <div class="mico">
                 <div>
                     <h2>Nome Do Animal</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam, nostrum!</p>
-                    <img src="IMG/3500_1_09.jpg" alt="mn">
+                    <img src="../IMG/3500_1_09.jpg" alt="mn">
                 </div>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit excepturi accusamus quas dolore
                     aspernatur provident dolorum est corporis ab voluptatum.</p>
@@ -120,7 +118,7 @@
 
     </main>
 
-    <script src="JS/main.js"></script>
+    <script src="../JS/main.js"></script>
 </body>
 
 </html>
