@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+header {
+    background-color: #F98C40;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.4);
+    color: #121212;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    justify-content: space-between;
+}
+
+#menu {
+    flex: 1;
+    text-align: right;
+}
+
+#menu ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+#menu ul li a {
+    color: #121212;
+    text-decoration: none;
+}
+
+#menu ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #D04A07;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+#menu ul li:hover::after {
+    width: 100%;
+}
+
+#logo {
+    width: 120px;
+    margin-left: 30px;
+}
+
+#btn {
+    display: none;
+}
+
+/* Header Fim */
+
+.resumo {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    color: #121212;
+    margin-bottom: 10%;
+}
+
+.resumo h1 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.resumo p {
+    margin-top: 2%;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.aspas:before {
+    content: "\f10d";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-size: 34px;
+    line-height: 2px;
+    color: rgba(152, 152, 152, .3);
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+}
+
+/* Resumo Fim */
+
+.doacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.card-doacao {
+    width: 500px;
+    height: 600px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px 0 rgb(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 50%;
+    border-radius: 10px 10px 0 0;
+}
+
+.card h2 {
+    text-align: center;
+    color: #121212;
+}
+
+.detalhes {
+    margin-top: 5%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.detalhes p {
+    text-align: center;
+}
+
+.btn-detalhes{
+    margin: 20px auto;
+    padding: 15px 30px;
+    display: block;
+    width: 90%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #F98C40;
+    cursor: pointer;
+}
+
+.card-inf {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(118deg, #f98d40, #d04a07) ;
+    border-radius: 10px;
+    padding: 40px;
+    transform: translateX(-100%);
+    transition: transform .3s ease-out;
+}
+
+.card-inf.abrir {
+    transform: translateX(0);
+}
+
+.card-title {
+    text-align: center;
+    color: #fff;
+    font-weight: normal;
+    padding: 10px;
+    border-bottom: 2px solid #eeeeee67;
+}
+
+.card-preco {
+    text-align: center;
+    margin-top: 10%;
+    font-size: 46px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.card-preco sup {
+    font-size: 16px;
+    margin-right: 5px;
+    font-weight: normal;
+}
+
+.card-preco sub {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.card-p {
+    margin-top: 60px;
+}
+
+.card-detalhes{
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 0;
+    font-weight: normal;
+    border-bottom: 2px solid #eeeeee67;
+    padding-bottom: 10px;
+}
+
+.card-detalhes:last-child {
+    border: none;
+}
+
+.btn-adquirir {
+    margin: 60px auto;
+    padding: 15px 30px;
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+/* Doação Fim */
+
+footer {
+    padding: 40px 0;
+    background-color: #D04A07;
+}
+
+footer .social {
+    text-align: center;
+    padding-bottom: 25px;
+    color: #fff;
+
+}
+
+footer .social h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+footer .social p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer .copyright {
+    background: #D04A07;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .copyright p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer .copyright span {
+    opacity: .4;
+    font-weight: 200;
+    color: #fff;
+}
+
+footer .social a {
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid #CCC;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+
+footer .social a:hover {
+    opacity: 0.9;
+}
+
+/* Footer Fim */
+
+@media (max-width: 600px) {
+
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 140px;
+        right: 0;
+        height: 0;
+        background: #F98C40;
+        transition: .4s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #nav.active #menu {
+        height: 50vh;
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #menu a {
+        margin: 10px 9rem;
+        display: flex;
+        text-align: center;
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    #btn {
+        margin-right: 1rem;
+        transition: 0.2s;
+        padding: 14px;
+        background-color: transparent;
+        background-image: url(../IMG/open.svg);
+        background-size: cover;
+        border: none;
+        cursor: pointer;
+        display: block;
+    }
+
+    #btn.alt {
+        transition: 0.1s;
+        background-image: url(../IMG/close.svg);
+        background-color: transparent;
+    }
+
+
+}
