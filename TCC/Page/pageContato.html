@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="../CSS/pageContato.css">
+    <title>Contato</title>
+</head>
+
+<body>
+    <header>
+        <div id="header">
+            <a href="pageHome.html"><img src="../IMG/NEWLOGO.svg" alt="logo" id="logo"></a>
+
+            <nav id="nav">
+
+                <button id="btn" onclick="toggleMenu();ChangeBG()"></button>
+
+                <div id="menu">
+                    <ul>
+                        <li><a href="pageHome.html">Início</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
+    <dic class="container">
+        <div class="form">
+            <div class="contatoInfo"></div>
+
+            <div class="contatoForm">
+                <span class="circulo primeiro"></span>
+                <span class="circulo segundo"></span>
+
+                <form action="pageContato.html">
+                    <h3 class="title">Entre Em Contato</h3>
+
+                    <div class="input-container focus">
+                        <input type="text" name="name" class="input">
+                        <label for="">Nome</label>
+                        <span>Nome</span>
+                    </div>
+
+                    <div class="input-container focus">
+                        <input type="email" name="email" class="input">
+                        <label for="">E-mail</label>
+                        <span>E-mail</span>
+                    </div>
+
+                    <div class="input-container focus">
+                        <input type="tel" name="telefone" class="input">
+                        <label for="">Telefone</label>
+                        <span>Telefone</span>
+                    </div>
+
+                    <div class="input-container textarea focus">
+                        <textarea name="mensagem" class="input"></textarea>
+                        <label for="">Mensagem</label>
+                        <span>Mensagem</span>
+                    </div>
+
+                    <input type="submit" value="Enviar" class="btnForm">
+                </form>
+
+            </div>
+
+        </div>
+
+    </dic>
+
+    <footer>
+        <div class="social">
+            <h3>OPASE</h3>
+            <p>Organização Protetora dos Animais Silvestres em Extinção</p>
+
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+            <a href="https://br.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+
+
+        </div>
+
+        <div class="copyright">
+            <p>&copy; OPASE <span> - Todos os Direitos Reservados - 2022</span>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../JS/pageContato.js"></script>
+</body>
+
+</html>
