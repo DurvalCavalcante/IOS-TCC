@@ -102,7 +102,6 @@ header {
 }
 
 /* Resumo Fim */
-
 .doacao {
     display: flex;
     align-items: center;
@@ -110,69 +109,70 @@ header {
     height: 100vh;
 }
 
-.card-doacao {
-    width: 500px;
-    height: 600px;
+.cardDoacao-1 {
+    margin: auto;
+    width: 300px;
+    height: 500px;
     border-radius: 10px;
     box-shadow: 0 5px 15px 0 rgb(0, 0, 0, 0.2);
     position: relative;
     overflow: hidden;
 }
 
-.card img {
+.card-1 img {
     width: 100%;
     height: 50%;
     border-radius: 10px 10px 0 0;
 }
 
-.card h2 {
+.card-1 h2 {
     text-align: center;
     color: #121212;
 }
 
-.detalhes {
-    margin-top: 5%;
-    padding: 10px;
+.detalhes-1 {
+    margin-top: 2%;
+    padding: 4px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+    grid-gap: 10px;
 }
 
-.detalhes p {
+.detalhes-1 p {
     text-align: center;
 }
 
-.btn-detalhes{
-    margin: 20px auto;
-    padding: 15px 30px;
+.btnDetalhes-1 {
+    margin: 90px auto;
+    padding: 12px 30px;
     display: block;
     width: 90%;
     border: none;
     outline: none;
     font-size: 16px;
     border-radius: 5px;
-    background-color: #F98C40;
+    background-color: #D04A07;
     cursor: pointer;
 }
 
-.card-inf {
+.cardInfo-1 {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(118deg, #f98d40, #d04a07) ;
+    background: linear-gradient(118deg, #f98d40, #d04a07);
     border-radius: 10px;
-    padding: 40px;
+    padding: 10px;
     transform: translateX(-100%);
     transition: transform .3s ease-out;
 }
 
-.card-inf.abrir {
+.cardInfo-1.abrir-1 {
     transform: translateX(0);
 }
 
-.card-title {
+.cardTitle-1 {
     text-align: center;
     color: #fff;
     font-weight: normal;
@@ -180,7 +180,7 @@ header {
     border-bottom: 2px solid #eeeeee67;
 }
 
-.card-preco {
+.cardPreco-1 {
     text-align: center;
     margin-top: 10%;
     font-size: 46px;
@@ -188,22 +188,22 @@ header {
     color: #fff;
 }
 
-.card-preco sup {
+.cardPreco-1 sup {
     font-size: 16px;
     margin-right: 5px;
     font-weight: normal;
 }
 
-.card-preco sub {
+.cardPreco-1 sub {
     font-weight: normal;
     font-size: 16px;
 }
 
-.card-p {
+.cardParagrafo-1 {
     margin-top: 60px;
 }
 
-.card-detalhes{
+.cardDetalhes-1 {
     color: #fff;
     font-size: 18px;
     padding: 10px 0;
@@ -212,12 +212,12 @@ header {
     padding-bottom: 10px;
 }
 
-.card-detalhes:last-child {
+.cardDetalhes-1:last-child {
     border: none;
 }
 
-.btn-adquirir {
-    margin: 60px auto;
+.btnAdquirir-1 {
+    margin: 30px auto 60px auto;
     padding: 15px 30px;
     display: block;
     width: 100%;
@@ -229,7 +229,373 @@ header {
     cursor: pointer;
 }
 
-/* Doação Fim */
+/* Doação Card 1 Fim */
+
+.cardDoacao-2 {
+    margin: auto;
+    width: 300px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px 0 rgb(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.card-2 img {
+    width: 100%;
+    height: 50%;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-2 h2 {
+    text-align: center;
+    color: #121212;
+}
+
+.detalhes-2 {
+    margin-top: 2%;
+    padding: 4px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.detalhes-2 p {
+    text-align: center;
+}
+
+.btnDetalhes-2 {
+    margin: 90px auto;
+    padding: 12px 30px;
+    display: block;
+    width: 90%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #D04A07;
+    cursor: pointer;
+}
+
+.cardInfo-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(118deg, #f98d40, #d04a07);
+    border-radius: 10px;
+    padding: 10px;
+    transform: translateX(-100%);
+    transition: transform .3s ease-out;
+}
+
+.cardInfo-2.abrir-2 {
+    transform: translateX(0);
+}
+
+.cardTitle-2 {
+    text-align: center;
+    color: #fff;
+    font-weight: normal;
+    padding: 10px;
+    border-bottom: 2px solid #eeeeee67;
+}
+
+.cardPreco-2 {
+    text-align: center;
+    margin-top: 10%;
+    font-size: 46px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.cardPreco-2 sup {
+    font-size: 16px;
+    margin-right: 5px;
+    font-weight: normal;
+}
+
+.cardPreco-2 sub {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.cardParagrafo-2 {
+    margin-top: 60px;
+}
+
+.cardDetalhes-2 {
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 0;
+    font-weight: normal;
+    border-bottom: 2px solid #eeeeee67;
+    padding-bottom: 10px;
+}
+
+.cardDetalhes-2:last-child {
+    border: none;
+}
+
+.btnAdquirir-2 {
+    margin: 30px auto 60px auto;
+    padding: 15px 30px;
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+/* Doação Card 2 Fim */
+
+.cardDoacao-3 {
+    margin: auto;
+    width: 300px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px 0 rgb(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.card-3 img {
+    width: 100%;
+    height: 50%;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-3 h2 {
+    text-align: center;
+    color: #121212;
+}
+
+.detalhes-3 {
+    margin-top: 2%;
+    padding: 4px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.detalhes-3 p {
+    text-align: center;
+}
+
+.btnDetalhes-3 {
+    margin: 90px auto;
+    padding: 12px 30px;
+    display: block;
+    width: 90%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #D04A07;
+    cursor: pointer;
+}
+
+.cardInfo-3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(118deg, #f98d40, #d04a07);
+    border-radius: 10px;
+    padding: 10px;
+    transform: translateX(-100%);
+    transition: transform .3s ease-out;
+}
+
+.cardInfo-3.abrir-3 {
+    transform: translateX(0);
+}
+
+.cardTitle-3 {
+    text-align: center;
+    color: #fff;
+    font-weight: normal;
+    padding: 10px;
+    border-bottom: 2px solid #eeeeee67;
+}
+
+.cardPreco-3 {
+    text-align: center;
+    margin-top: 10%;
+    font-size: 46px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.cardPreco-3 sup {
+    font-size: 16px;
+    margin-right: 5px;
+    font-weight: normal;
+}
+
+.cardPreco-3 sub {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.cardParagrafo-3 {
+    margin-top: 60px;
+}
+
+.cardDetalhes-3 {
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 0;
+    font-weight: normal;
+    border-bottom: 2px solid #eeeeee67;
+    padding-bottom: 10px;
+}
+
+.cardDetalhes-3:last-child {
+    border: none;
+}
+
+.btnAdquirir-3 {
+    margin: 30px auto 60px auto;
+    padding: 15px 30px;
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+/* Doação Card 3 Fim */
+
+.cardDoacao-4 {
+    margin: auto;
+    width: 300px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px 0 rgb(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.card-4 img {
+    width: 100%;
+    height: 50%;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-4 h2 {
+    text-align: center;
+    color: #121212;
+}
+
+.detalhes-4 {
+    margin-top: 2%;
+    padding: 4px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.detalhes-4 p {
+    text-align: center;
+}
+
+.btnDetalhes-4 {
+    margin: 90px auto;
+    padding: 12px 30px;
+    display: block;
+    width: 90%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #D04A07;
+    cursor: pointer;
+}
+
+.cardInfo-4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(118deg, #f98d40, #d04a07);
+    border-radius: 10px;
+    padding: 10px;
+    transform: translateX(-100%);
+    transition: transform .3s ease-out;
+}
+
+.cardInfo-4.abrir-4 {
+    transform: translateX(0);
+}
+
+.cardTitle-4 {
+    text-align: center;
+    color: #fff;
+    font-weight: normal;
+    padding: 10px;
+    border-bottom: 2px solid #eeeeee67;
+}
+
+.cardPreco-4 {
+    text-align: center;
+    margin-top: 10%;
+    font-size: 46px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.cardPreco-4 sup {
+    font-size: 16px;
+    margin-right: 5px;
+    font-weight: normal;
+}
+
+.cardPreco-4 sub {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.cardParagrafo-4 {
+    margin-top: 60px;
+}
+
+.cardDetalhes-4 {
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 0;
+    font-weight: normal;
+    border-bottom: 2px solid #eeeeee67;
+    padding-bottom: 10px;
+}
+
+.cardDetalhes-4:last-child {
+    border: none;
+}
+
+.btnAdquirir-4 {
+    margin: 30px auto 60px auto;
+    padding: 15px 30px;
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+/* Doação Card 4 Fim */
 
 footer {
     padding: 40px 0;

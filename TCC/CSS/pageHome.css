@@ -172,7 +172,7 @@ header {
     background: #F98C40;
     border-radius: 10px;
     flex-direction: column;
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .org .animal:hover {
@@ -198,7 +198,7 @@ header {
     text-align: center;
     padding: 10px;
     visibility: hidden;
-    transition: 0.3s ease-in-out;
+    transition: 0s ease-in-out;
 }
 
 .org .animal .texto p {
