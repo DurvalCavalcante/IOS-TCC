@@ -33,21 +33,36 @@ function cartao(){
     document.getElementById('container').style.justifyContent ="center"
 }
 
-function generateQR(){
-    document.querySelector('#qr-image').style.display = "block";
+
+function generateDonate(){
+    document.querySelector('#donate').style.display = "block";
+}
+
+function generataIMG(){
+    document.querySelector('#qr-image2').style.display = "block";
     document.querySelector('#img').style.display = "block";
-    document.querySelector('#timeout').style.display = "flex";
+    document.querySelector('#qr-image').style.display = "none";
     
     var foto = document.querySelector('#img')
     foto.src="IMG/Obrigado_por_doar.png";   
    
-    var qr = document.getElementById('timeout');
+    var qr = document.getElementById('time');
     setTimeout(() => {
 
         qr.style.display = "none";
     }, 20000);
+}
+
+
+function generateQR(){
+    document.querySelector('#qr-image').style.display = "flex";
+    document.querySelector('#doa').style.display = "block";
+    document.querySelector('#timeout').style.display = "flex";
+    
+   
     }
 
+    
 function cartao(){
     document.getElementById('container').style.display="flex";
     document.getElementById('container').style.justifyContent ="center"

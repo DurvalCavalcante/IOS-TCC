@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Lobster&family=Montserrat&display=swap');
+
 * {
     box-sizing: border-box;
     outline: none;
@@ -9,24 +10,74 @@
     padding: 0;
 }
 
-body{
+body {
     background: #d9d9d9;
     overflow-x: hidden;
 
 }
 
-#container {
+.inputboxx {
     display: none;
 }
 
 
- /* ========================================================*/ 
+#container {
+    display: none;
+}
+
+#qr-image2 {
+    display: none;
+    flex-direction: column;
+}
+
+#qr-image {
+    display: none;
+    flex-direction: column;
+    margin: 15px;
+    color: rgb(12, 12, 12);
+    background: linear-gradient(40deg,#d04a07, #F98C40 );
+    border-radius: 5px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+/* ========================================================*/
 
 
+.donate {
+    padding: 5px 0;
+    font-size: 13px;
+    color: #fff;
+    border-radius: 5px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 3);
+    color: black;
+    width: 70px;
+    align-self: center;
+    padding-left: 10px;
+    margin-top: 10px;
+}
 
- /*Personalização do cartão*/ 
+.submit-btn3 {
+    align-self: center;
+    width: 70px;
+    margin: 15px;
+    background: #963a19;
+    cursor: pointer;
+    transition: .2s linear;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+
+.submit-btn3:hover {
+    letter-spacing: 1px;
+
+}
+
+/*Personalização do cartão*/
 .container2 {
-    
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -186,37 +237,39 @@ body{
     margin-top: 30px;
     height: 30px;
 }
- /* Fim da personalização do cartão*/ 
 
-
- 
- /* ========================================================*/ 
+/* Fim da personalização do cartão*/
 
 
 
-  /*Pesonalização da area em volta aos botões*/ 
+/* ========================================================*/
+
+
+
+/*Pesonalização da area em volta aos botões*/
 .container3 {
     padding: 50px 10px;
-    margin:auto;
-    background:linear-gradient( 40deg,#F98C40,#d04a07);
+    margin: auto;
+    background: linear-gradient(40deg, #F98C40, #d04a07);
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 20px;
     box-shadow: 2px 2px 10px;
     flex-direction: row;
-    margin-top: 10px;
+    padding: 100px;
+
 }
 
- /*Fim da personalização da area em volta dos botões*/ 
-
-
- 
- /* ========================================================*/ 
+/*Fim da personalização da area em volta dos botões*/
 
 
 
-  /*Começo da personalização dos botões */ 
+/* ========================================================*/
+
+
+
+/*Começo da personalização dos botões */
 .input {
     padding: 12px 20px;
     width: 300px;
@@ -227,7 +280,7 @@ body{
     width: 300px;
     margin-bottom: 10px;
     margin-top: 10px;
-    
+
 }
 
 #display-card {
@@ -236,10 +289,10 @@ body{
     letter-spacing: 2px;
 }
 
-.img-logo{
+.img-logo {
     width: 100px;
-    margin:20px;
-    
+    margin: 20px;
+
 }
 
 .display-img {
@@ -252,7 +305,7 @@ body{
 
 .div-card {
     display: flex;
-    margin:auto;   
+    margin: auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -326,17 +379,17 @@ button:focus {
     outline: none;
 }
 
-.texte{
-    margin-top:30px;
-    
+.texte {
+    margin-top: 30px;
+
 }
 
-.text{
+.text {
     font-family: 'Montserrat', sans-serif;
-    
+
 }
 
-.div-img{
+.div-img {
     text-align: center;
     display: flex;
     align-items: center;
@@ -344,15 +397,15 @@ button:focus {
 }
 
 
- /*Fim da personalização dos botões */ 
+/*Fim da personalização dos botões */
 
 
- /* ========================================================*/ 
+/* ========================================================*/
 
 
- /*Personalização do footer */ 
+/*Personalização do footer */
 
- footer {
+footer {
     padding: 40px 0;
     background-color: #D04A07;
     margin-top: 100px;
@@ -416,18 +469,18 @@ footer .social a:hover {
     opacity: 0.9;
 }
 
- 
-/*Fim da personalização do footer */ 
+
+/*Fim da personalização do footer */
 
 
 
- /* ========================================================*/ 
+/* ========================================================*/
 
 
-@media(max-widht:600px){
+@media(max-widht:600px) {
     .container3 {
-       
-        background:linear-gradient( 40deg,#F98C40,#d04a07);
+
+        background: linear-gradient(40deg, #F98C40, #d04a07);
         display: flex;
         align-items: center;
         justify-content: center;
