@@ -109,6 +109,10 @@ header {
     height: 100vh;
 }
 
+.doacao a {
+    text-decoration: none;
+}
+
 .cardDoacao-1 {
     margin: auto;
     width: 300px;
@@ -134,8 +138,8 @@ header {
     margin-top: 2%;
     padding: 4px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
 }
 
 .detalhes-1 p {
@@ -143,7 +147,7 @@ header {
 }
 
 .btnDetalhes-1 {
-    margin: 90px auto;
+    margin: 30px auto;
     padding: 12px 30px;
     display: block;
     width: 90%;
@@ -217,7 +221,7 @@ header {
 }
 
 .btnAdquirir-1 {
-    margin: 30px auto 60px auto;
+    margin: 58px auto 60px auto;
     padding: 15px 30px;
     display: block;
     width: 100%;
@@ -256,8 +260,8 @@ header {
     margin-top: 2%;
     padding: 4px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
 }
 
 .detalhes-2 p {
@@ -265,7 +269,7 @@ header {
 }
 
 .btnDetalhes-2 {
-    margin: 90px auto;
+    margin: 30px auto;
     padding: 12px 30px;
     display: block;
     width: 90%;
@@ -339,7 +343,7 @@ header {
 }
 
 .btnAdquirir-2 {
-    margin: 30px auto 60px auto;
+    margin: 58px auto 60px auto;
     padding: 15px 30px;
     display: block;
     width: 100%;
@@ -378,8 +382,8 @@ header {
     margin-top: 2%;
     padding: 4px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
 }
 
 .detalhes-3 p {
@@ -387,7 +391,7 @@ header {
 }
 
 .btnDetalhes-3 {
-    margin: 90px auto;
+    margin: 30px auto;
     padding: 12px 30px;
     display: block;
     width: 90%;
@@ -461,7 +465,7 @@ header {
 }
 
 .btnAdquirir-3 {
-    margin: 30px auto 60px auto;
+    margin: 58px auto 60px auto;
     padding: 15px 30px;
     display: block;
     width: 100%;
@@ -500,8 +504,8 @@ header {
     margin-top: 2%;
     padding: 4px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
 }
 
 .detalhes-4 p {
@@ -509,7 +513,7 @@ header {
 }
 
 .btnDetalhes-4 {
-    margin: 90px auto;
+    margin: 30px auto;
     padding: 12px 30px;
     display: block;
     width: 90%;
@@ -583,7 +587,7 @@ header {
 }
 
 .btnAdquirir-4 {
-    margin: 30px auto 60px auto;
+    margin: 58px auto 60px auto;
     padding: 15px 30px;
     display: block;
     width: 100%;
@@ -709,6 +713,5 @@ footer .social a:hover {
         background-image: url(../IMG/close.svg);
         background-color: transparent;
     }
-
 
 }
