@@ -715,3 +715,25 @@ footer .social a:hover {
     }
 
 }
+
+@media (max-width: 850px) {
+    .doacao {
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0 24%;
+    }
+
+    .cardDoacao-2 {
+        margin-top: 5%;
+    }
+
+    .cardDoacao-3 {
+        margin-top: 5%;
+    }
+
+    .cardDoacao-4 {
+        margin: 5% 0;
+    }
+}

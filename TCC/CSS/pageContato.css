@@ -258,6 +258,193 @@ textarea.input {
     opacity: 1;
 }
 
+/* Contato Info */
+
+.contatoInfo {
+    padding: 2.3rem 2.2rem;
+    position: relative;
+}
+
+.contatoInfo .title {
+    color: #26456e;
+}
+
+.texto {
+    color: #26456e;
+    margin: 1.5rem 0 2rem 0;
+}
+
+.informacao {
+    display: flex;
+    color: #26456e;
+    margin: 0.7rem;
+    align-items: center;
+    font-size: 0.95rem;
+}
+
+.icone {
+    width: 40px;
+    margin-right: 0.7rem;
+}
+
+.social-media {
+    padding: 4rem 0 0 0;
+}
+
+.social-media p {
+    color: #26456e;
+}
+
+.social-icone {
+    display: flex;
+    margin-top: 0.5rem;
+}
+
+.social-icone a {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #D04A07, #F98C40);
+    color: #26456e;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 0.5rem;
+    transition: 0.3s;
+}
+
+.social-icone a:hover {
+    transform: scale(1.05);
+}
+
+.contatoInfo::before{
+    content: "";
+    position: absolute;
+    width: 110px;
+    height: 100px;
+    border-radius: 50%;
+    border: 22px solid #F98C40;
+    bottom: -77px;
+    right: 50px;
+    opacity: 0.5;
+}
+
+.grande-circulo {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #F98C40, #D04A07);
+    bottom: 50%;
+    right: 50%;
+    transform: translate(-40%, 38%);
+}
+
+.grande-circulo::after{
+    content: "";
+    position: absolute;
+    width: 360px;
+    height: 360px;
+    background-color: #fafafa;
+    border-radius: 50%;
+    top: calc(50% - 180px);
+    left: calc(50% - 180px);
+}
+
+.bg {
+    position: absolute;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(181%, 11%);
+    opacity: 0.4;
+}
+
+@media (max-width: 850px) {
+    .form {
+        grid-template-columns: 1fr;
+    }
+
+    .contatoInfo::before {
+        bottom: initial;
+        top: -75px;
+        right: 65px;
+        transform: scale(0.95);
+    }
+
+    .contatoForm::before {
+        top: -13px;
+        left: initial;
+        right: 70px;
+    }
+
+    .bg {
+        transform: translate(140%, 43%);
+        height: 350px;
+    }
+
+    .grande-circulo {
+        bottom: 75%;
+        transform: scale(0.9) translate(-40%, 30%);
+        right: 50%;
+    }
+
+    .texto {
+        margin: 1rem 0 1.5rem 0;
+
+    }
+
+    .social-media {
+        padding: 1.5rem 0 0 0 ;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 1.5rem;
+    }    
+
+    .contatoInfo::before {
+        display: none;
+    }
+
+    .bg,
+    .grande-circulo{
+        display: none;
+    }
+
+    form,
+    .contatoInfo{
+        padding: 1.7rem 1.6rem;
+    }
+
+    .texto,
+    .informacao,
+    .social-media p {
+        font-size: 0.8rem;
+    }
+
+    .title {
+        font-size: 1.15rem;
+    }
+
+    .social-icone a {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    .icone {
+        width: 23px;
+    }
+
+    .input {
+        padding: 0.45rem 1.2rem;
+    }
+
+    .btnForm {
+        padding: 0.45rem 1.2rem;
+    }
+}
 
 /* Contato Fim */
 
