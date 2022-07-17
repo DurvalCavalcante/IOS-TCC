@@ -1,22 +1,5 @@
 AOS.init();
 
-// Menu Hambúrguer
-
-const btn = document.getElementById("btn");
-
-function toggleMenu() {
-    const nav = document.getElementById('nav');
-    nav.classList.toggle('active');
-}
-
-btn.addEventListener('click', toggleMenu);
-
-function ChangeBG() {
-    document.getElementById('btn').classList.contains('alt')
-        ? document.getElementById('btn').classList.remove('alt')
-        : document.getElementById('btn').classList.add('alt');
-}
-
 // Animaçaõ dos cards de preço Card 1
 
 document.querySelectorAll('button').forEach(btn => {
@@ -64,3 +47,20 @@ document.querySelectorAll('button').forEach(btn => {
         }
     })
 })
+
+// Menu Hambúrguer
+
+const btn = document.getElementById("b");
+
+function toggleMenu() {
+    const nav = document.getElementById('nav');
+    nav.classList.toggle('active');
+}
+
+btn.addEventListener('click', toggleMenu);
+
+function ChangeBG() {
+    document.getElementById('btn').classList.contains('alt')
+        ? document.getElementById('btn').classList.remove('alt')
+        : document.getElementById('btn').classList.add('alt');
+}

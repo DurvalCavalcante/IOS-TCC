@@ -13,6 +13,7 @@ body {
     background-color: #fafafa;
 }
 
+/* Headedr Início */
 header {
     background-color: #F98C40;
     box-shadow: 0 0 20px rgb(0, 0, 0, 0.4);
@@ -60,76 +61,26 @@ header {
     display: none;
 }
 
-h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 2rem;
-    color: #26456E;
-}
-
-.header-down {
-    margin-top: 30px;
-    padding: 60px 0 168px 0;
-    text-align: center;
-}
-
-.header-down h1 {
-    font-size: 34px;
-    padding-bottom: 90px;
-}
-
-.header-down p {
-    font-size: 18px;
-    padding: 0 60px;
-    padding-top: 30px;
-    padding-bottom: 90px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.header-down button {
-    padding: 15px 25px;
-    font-size: 24px;
-    font-weight: 700;
-    text-align: center;
-    margin-top: 35px;
-    cursor: pointer;
-    outline: none;
-    color: #d9d9d9;
-    background-color: #26456E;
-    border: none;
-    border-radius: 15px;
-}
-
-.header-down button:hover {
-    background-color: #26456E;
-    box-shadow: 0 0 6px 4px #1212126e;
-}
-
-.header-down button:active {
-    background-color: #2b4f7e;
-    transform: translateY(10px);
-    box-shadow: 0 0 10px 5px #19365b9e;
-}
-
 /* Header Fim */
 
+/* Resumo Início */
 .resumo {
     background-color: #f2f2f2;
     width: 100%;
-    margin: 10% auto; 
+    margin: 30px 0;
+    padding: 120px 0;
     text-align: center;
-    padding: 90px 0;
+    padding-top: 100px;
     color: #121212;
 }
 
 .resumo h1 {
-    font-size: 2rem;
+    font-size: 32px;
     font-weight: 600;
 }
 
 .resumo p {
-    margin-top: 2%;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 300;
     line-height: 22px;
     padding: 30px;
@@ -149,110 +100,6 @@ h1 {
 }
 
 /* Resumo Fim */
-
-.cards-animals {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #121212;
-    margin-bottom: 10%;
-}
-
-.org {
-    width: 80%;
-    padding: 30px;
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    color: #121212;
-}
-
-.org .animal {
-    max-width: 300px;
-    height: 200px;
-    position: relative;
-    margin: 30px 10px;
-    padding: 20px 15px;
-    background: #F98C40;
-    border-radius: 10px;
-    flex-direction: column;
-    transition: 0.3s ease-in-out;
-}
-
-.org .animal:hover {
-    height: 564px;
-}
-
-.org .animal .imagem {
-    position: relative;
-    width: 270px;
-    height: 270px;
-    top: -60px;
-    z-index: 1;
-}
-
-.org .animal .imagem img {
-    max-width: 100%;
-    border-radius: 10px;
-}
-
-.org .animal .texto {
-    position: relative;
-    margin-top: -120px;
-    text-align: center;
-    padding: 10px;
-    visibility: hidden;
-    transition: 0s ease-in-out;
-}
-
-.org .animal .texto p {
-    margin-top: 6px;
-}
-
-.org .animal:hover .texto {
-    visibility: visible;
-    transition-delay: 0.3s;
-    cursor: pointer;
-}
-
-/* Cards Fim */
-
-.sobre {
-    background-color: #f2f2f2;
-    width: 100%;
-    margin: 10% 0;
-    text-align: center;
-    padding: 90px 0;
-}
-
-.sobre h1 {
-    font-size: 32px;
-    font-weight: 600;
-}
-
-.sobre p {
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 22px;
-    padding: 30px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.inf-p:before {
-    content: "\f10d";
-    font-family: FontAwesome;
-    font-style: normal;
-    font-size: 38px;
-    line-height: 4px;
-    color: rgba(152, 152, 152, .3);
-    display: flex;
-    justify-content: flex-start;
-    margin-bottom: 10px;
-}
-
-/* Sobre Fim */
 
 /* Footer Início */
 footer {

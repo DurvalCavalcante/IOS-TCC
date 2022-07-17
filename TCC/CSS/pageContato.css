@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 * {
     margin: 0;
@@ -8,11 +10,10 @@
 }
 
 body {
-    background-color: #ffffff;
+    background-color: #fafafa;
 }
 
 /* Header Início */
-
 header {
     background-color: #F98C40;
     box-shadow: 0 0 20px rgb(0, 0, 0, 0.4);
@@ -26,35 +27,29 @@ header {
     justify-content: space-between;
 }
 
-#menu {
-    flex: 1;
-    text-align: right;
+#menu a {
+    padding: 10px 14px;
 }
 
 #menu ul li {
     list-style: none;
     display: inline-block;
-    padding: 8px 12px;
+    padding: 9px 0;
+    margin-right: 15px;
     position: relative;
 }
 
 #menu ul li a {
     color: #121212;
     text-decoration: none;
+    font-weight: 500;
 }
 
-#menu ul li::after {
-    content: '';
-    width: 0%;
-    height: 2px;
-    background: #D04A07;
-    display: block;
-    margin: auto;
-    transition: 0.5s;
-}
-
-#menu ul li:hover::after {
-    width: 100%;
+#menu a:hover {
+    background-color: #26456e;
+    color: #d9d9d9;
+    border-radius: 25px;
+    transition: 0.1s;
 }
 
 #logo {
@@ -68,14 +63,121 @@ header {
 
 /* Header Fim */
 
+/* Resumo Início */
+.resumo {
+    width: 100%;
+    margin: 30px 0;
+    padding: 120px 0;
+    text-align: center;
+    padding-top: 100px;
+    color: #121212;
+}
+
+.resumo h1 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.resumo h2 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.resumo p {
+    margin-top: 2%;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+/* Resumo Fim */
+
+/* Cards Pessoal Início */
+.cards {
+    width: 75%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+.card {
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2);
+}
+
+.card img {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+}
+
+.contexto {
+    text-align: center;
+    padding: 10px;
+}
+
+.contexto h2 {
+    margin-top: 5px;
+    letter-spacing: 1.5px;
+    color: #333;
+}
+
+.contexto h3 {
+    font-size: 17px;
+    color: #5c5c5c;
+    letter-spacing: 1.5px;
+}
+
+.contexto p {
+    margin-top: 10px;
+    color: #5c5c5c;
+}
+
+.contexto a {
+    margin-top: 10px;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #d9563f;
+    color: #fff;
+    font-size: 17px;
+    padding: 5px 18px;
+    border-radius: 40px;
+    letter-spacing: 1.5px;
+}
+
+.contexto a:hover {
+    background-color: #db7d7d;
+    transition: 0.2s ease;
+}
+
+@media (max-width: 850px) {
+    .cards {
+        width: 75%;
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-gap: 30px;
+    }
+}
+
+/* Cards Pessoal Fim */
+
 /* Contato Início */
+.resumoForm {
+    width: 100%;
+    margin-top: 15%;
+    padding: 20px 0;
+    text-align: center;
+    padding-top: 100px;
+    color: #121212;
+}
 
 .container {
     position: relative;
     width: 100%;
     min-height: 100vh;
     padding: 2rem;
-    background-color: #fafafa;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -316,7 +418,7 @@ textarea.input {
     transform: scale(1.05);
 }
 
-.contatoInfo::before{
+.contatoInfo::before {
     content: "";
     position: absolute;
     width: 110px;
@@ -339,7 +441,7 @@ textarea.input {
     transform: translate(-40%, 38%);
 }
 
-.grande-circulo::after{
+.grande-circulo::after {
     content: "";
     position: absolute;
     width: 360px;
@@ -394,26 +496,26 @@ textarea.input {
     }
 
     .social-media {
-        padding: 1.5rem 0 0 0 ;
+        padding: 1.5rem 0 0 0;
     }
 }
 
 @media (max-width: 480px) {
     .container {
         padding: 1.5rem;
-    }    
+    }
 
     .contatoInfo::before {
         display: none;
     }
 
     .bg,
-    .grande-circulo{
+    .grande-circulo {
         display: none;
     }
 
     form,
-    .contatoInfo{
+    .contatoInfo {
         padding: 1.7rem 1.6rem;
     }
 
@@ -521,36 +623,53 @@ footer .social a:hover {
         display: block;
         position: absolute;
         width: 100%;
-        top: 140px;
+        top: 150px;
+        text-align: center;
         right: 0;
         height: 0;
         background: #F98C40;
-        transition: .4s;
+        transition: 0.4s;
         z-index: 1000;
         visibility: hidden;
         overflow-y: hidden;
+        overflow-x: hidden;
+        box-shadow: 1px 5px 4px #1212124f;
+        padding: 30px 0;
     }
 
     #nav.active #menu {
-        height: 50vh;
+        height: 45vh;
         visibility: visible;
         overflow-y: auto;
     }
 
-    #menu a {
-        margin: 10px 9rem;
+    #menu ul{
         display: flex;
-        text-align: center;
-        font-size: 1.2rem;
-        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 35vh;
+    }
+
+    #menu a {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.3rem;
+        overflow: hidden;
+    }
+
+    #menu a:hover {
+        background-color: #26456e;
+        width: 400px;
+        border-radius: 15px;
     }
 
     #btn {
         margin-right: 1rem;
         transition: 0.2s;
-        padding: 14px;
+        padding: 1.2rem;
         background-color: transparent;
-        background-image: url(../IMG/open.svg);
+        background-image: url(/TCC/IMG/open.svg);
         background-size: cover;
         border: none;
         cursor: pointer;
@@ -559,9 +678,27 @@ footer .social a:hover {
 
     #btn.alt {
         transition: 0.1s;
-        background-image: url(../IMG/close.svg);
+        background-image: url(/TCC/IMG/close.svg);
         background-color: transparent;
     }
+}
 
+/*  ~~~~~ SCROLLBAR ~~~~~ */
+::-webkit-scrollbar {
+    width: 10px;
+}
 
+::-webkit-scrollbar-track {
+    background: #d9d9d9;
+    box-shadow: inset 0 0 5px #ada9a9;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #26456E;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #193960;
 }
