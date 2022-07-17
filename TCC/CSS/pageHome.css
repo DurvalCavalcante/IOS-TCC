@@ -86,6 +86,10 @@ h1 {
     font-family: 'Montserrat', sans-serif;
 }
 
+.header-down p::first-letter{
+    font-size: 32px;
+}
+
 .header-down button {
     padding: 15px 25px;
     font-size: 24px;
@@ -114,9 +118,8 @@ h1 {
 /* Header Fim */
 
 .resumo {
-    background-color: #f2f2f2;
     width: 100%;
-    margin: 10% auto; 
+    margin: 5% auto; 
     text-align: center;
     padding: 90px 0;
     color: #121212;
@@ -148,9 +151,14 @@ h1 {
     margin-bottom: 15px;
 }
 
+.resumo p::first-letter{
+    font-size: 32px;
+}
+
 /* Resumo Fim */
 
 .cards-animals {
+    background-color: #f2f2f2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -220,9 +228,8 @@ h1 {
 /* Cards Fim */
 
 .sobre {
-    background-color: #f2f2f2;
     width: 100%;
-    margin: 10% 0;
+    margin: 5% 0;
     text-align: center;
     padding: 90px 0;
 }
@@ -250,6 +257,10 @@ h1 {
     display: flex;
     justify-content: flex-start;
     margin-bottom: 10px;
+}
+
+.sobre p::first-letter{
+    font-size: 32px;
 }
 
 /* Sobre Fim */
