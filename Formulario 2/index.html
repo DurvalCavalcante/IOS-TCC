@@ -19,9 +19,31 @@
 
             <div class="display-img">
 
-                <div class="div-img">
+                <div class="div-img2">
 
+                    <button id="display-card2" class="textee" type="button" onclick="generateQR2()">
+                        <span id="text3" class="text">Destino</span>
+                        <span class="icon"><img src=" IMG/Casa.jpg" width="23" height="23" viewBox="0 0 24 24">
+                            <path
+                                d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
+                        </span>
+                    </div>
+                        <div id="qr-image2">
 
+                            <span class="error"></span>
+                            <span id="doa">Nome da rua</span>
+                            <input class="donate" value="Rua," type="text">
+                            <span id="doa">Nº</span>
+                            <input class="donate" value="Nº" type="text">
+                            <span id="doa">CEP</span>
+                            <input class="donate" placeholder="12345-021" value="" type="text">
+                            <span id="doa">Complemento</span>
+                            <input class="donate" value="" type="text">
+                            <input type="submit" onclick="generataIMG()" value="Concluir!" class="submit-btn3" ">
+
+                        </div>
+                    </button>
+                    <div class="div-img">
                     <button id="display-card" class="text" type="button" onclick="generateQR()">
                         <span id="text2" class="text">PIX</span>
                         <span class="icon"><img src=" IMG/icon2.png" width="20" height="20" viewBox="0 0 24 24">

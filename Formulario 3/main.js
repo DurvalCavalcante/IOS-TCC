@@ -73,3 +73,9 @@ function cartao(){
         ctn.style.display = "none";
     }, 60000);
 }
+
+function OBRIGADO(){
+    alert("Obrigado por doar!");
+    console.log("Obrigado");
+    return
+}

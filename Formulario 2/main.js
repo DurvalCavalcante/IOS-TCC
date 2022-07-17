@@ -33,6 +33,7 @@ function cartao(){
     document.getElementById('container').style.justifyContent ="center"
 }
 
+
 function generateQR(){
     document.querySelector('#qr-image').style.display = "block";
     document.querySelector('#img').style.display = "block";
@@ -48,6 +49,7 @@ function generateQR(){
     }, 20000);
     }
 
+
 function cartao(){
     document.getElementById('container').style.display="flex";
     document.getElementById('container').style.justifyContent ="center"
@@ -57,4 +59,17 @@ function cartao(){
          
         ctn.style.display = "none";
     }, 60000);
+}
+
+
+function generateQR2(){
+    document.querySelector('#qr-image2').style.display = "flex";
+    document.querySelector('#img').style.display = "block";
+
+}
+
+function generataIMG(){
+    alert("Endereço salvo");
+    console.log("Você quer um cookie?");
+    return
 }
