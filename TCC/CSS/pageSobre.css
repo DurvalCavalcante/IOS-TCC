@@ -96,7 +96,7 @@ header {
     font-family: 'Montserrat', sans-serif;
 }
 
-.resumo p::first-letter{
+.resumo p::first-letter {
     font-size: 32px;
 }
 
@@ -113,6 +113,52 @@ header {
 }
 
 /* Resumo Fim */
+
+/* Mapa Início */
+.card-mapa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    padding: 40px 20px;
+}
+
+.card-mapa img {
+    max-width: 100%;
+}
+
+.resumo-p {
+    background-color: #f2f2f2;
+    width: 100%;
+    margin: 30px 0;
+    padding: 120px 0;
+    text-align: center;
+    padding-top: 100px;
+    color: #121212;
+}
+
+.resumo-p p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 850px) {
+    .card-mapa {
+        display: inline;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+
+    .card-mapa img {
+        max-width: 60%;
+    }
+}
+
+/* Mapa Fim */
 
 /* Footer Início */
 footer {
@@ -207,7 +253,7 @@ footer .social a:hover {
         overflow-y: auto;
     }
 
-    #menu ul{
+    #menu ul {
         display: flex;
         flex-direction: column;
         align-items: center;
