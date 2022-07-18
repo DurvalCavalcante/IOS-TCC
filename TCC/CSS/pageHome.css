@@ -51,6 +51,15 @@ header {
     transition: 0.1s;
 }
 
+#donate{
+    background-color: #26456e;
+    color: #d9d9d9 !important;
+    border-radius: 25px;
+}
+#donate:hover{ 
+    box-shadow: 0px 0px 25px 4px #6f9dd896;
+}
+
 #logo {
     width: 120px;
     margin-left: 30px;
@@ -107,7 +116,7 @@ h1 {
 
 .header-down button:active {
     background-color: #2b4f7e;
-    transform: translateY(10px);
+    transform: translateY(5px);
     box-shadow: 0 0 10px 5px #19365b9e;
 }
 
@@ -209,6 +218,14 @@ h1 {
 
 .org .animal .texto p {
     margin-top: 6px;
+    font-weight: 500;
+    color: #FAFAFA;
+}
+.org .animal .texto h2{
+    color: #4e1c02;
+    text-shadow: 0px 1px 3px #12121280;
+    font-weight: 700;
+    margin-bottom: 15px;
 }
 
 .org .animal:hover .texto {
