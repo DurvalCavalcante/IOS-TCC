@@ -80,6 +80,9 @@ h1 {
     margin-top: 30px;
     padding: 60px 0 168px 0;
     text-align: center;
+    /* background-image: url(/TCC/IMG/bg-header-down.jpg);
+    background-position: center;
+    background-size: cover; */
 }
 
 .header-down h1 {
@@ -93,6 +96,10 @@ h1 {
     padding-top: 30px;
     padding-bottom: 90px;
     font-family: 'Montserrat', sans-serif;
+}
+
+.header-down p::first-letter{
+    font-size: 32px;
 }
 
 .header-down button {
@@ -123,9 +130,8 @@ h1 {
 /* Header Fim */
 
 .resumo {
-    background-color: #f2f2f2;
     width: 100%;
-    margin: 10% auto; 
+    margin: 5% auto; 
     text-align: center;
     padding: 90px 0;
     color: #121212;
@@ -157,9 +163,14 @@ h1 {
     margin-bottom: 15px;
 }
 
+.resumo p::first-letter{
+    font-size: 32px;
+}
+
 /* Resumo Fim */
 
 .cards-animals {
+    background-color: #f2f2f2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -237,9 +248,8 @@ h1 {
 /* Cards Fim */
 
 .sobre {
-    background-color: #f2f2f2;
     width: 100%;
-    margin: 10% 0;
+    margin: 5% 0;
     text-align: center;
     padding: 90px 0;
 }
@@ -267,6 +277,10 @@ h1 {
     display: flex;
     justify-content: flex-start;
     margin-bottom: 10px;
+}
+
+.sobre p::first-letter{
+    font-size: 32px;
 }
 
 /* Sobre Fim */
@@ -333,6 +347,7 @@ footer .social a {
 
 footer .social a:hover {
     opacity: 0.9;
+    color: #185a9d;
 }
 
 /* Footer Fim */

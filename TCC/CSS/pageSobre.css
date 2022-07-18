@@ -96,7 +96,11 @@ header {
     font-family: 'Montserrat', sans-serif;
 }
 
-.aspas:before {
+.resumo p::first-letter{
+    font-size: 32px;
+}
+
+.aspas::before {
     content: "\f10d";
     font-family: FontAwesome;
     font-style: normal;
@@ -172,6 +176,7 @@ footer .social a {
 
 footer .social a:hover {
     opacity: 0.9;
+    color: #185a9d;
 }
 
 /* Footer Fim */

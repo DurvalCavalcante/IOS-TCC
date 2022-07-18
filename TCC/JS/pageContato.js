@@ -27,29 +27,32 @@ const email = document.getElementById('email');
 const telefone = document.getElementById('telefone');
 const textaera = document.getElementById('textarea');
 
-formulario.addEventListener('submit', (e) => {
-    e.preventDefault();
+formulario.addEventListener("submit", validar);
 
-    checkout();
-})
+function validar(event) {
+    event.preventDefault();
 
-function checkout() {
-    const nomeValue = nome.value;
-    const emailValue = email.value;
-    const telefoneValue = telefone.value;
-    const textareaValue = textaera.value;
-
-    if (nomeValue === '') {
-        alert("-O Nome é Obrigatório!")
-    } else if (emailValue === '') {
-        alert("-O E-mail é Obrigatório!")
-    } else if (telefoneValue === '') {
-        alert("-O Telefone é Obrigatório!")
-    } else if (textareaValue === '') {
-        alert("-A Mensagem é Obrigatória!")
-    } else {
-        alert("- Obrigado por entrar em contato!")
+    if (nome.value == '') {
+        alert("- Preencher o campo Nome!");
+        nome.focus();
+        return false;
     }
+    if (email.value == '') {
+        alert("- Preencher o campo E-mail!");
+        email.focus();
+        return false;
+    }
+    if (telefone.value == '') {
+        alert("- Preencher o campo Telefone!");
+        telefone.focus();
+        return false;
+    }
+    if (textaera.value == '') {
+        alert("- Preencher o campo Mensagem!");
+        textaera.focus();
+        return false;
+    }
+    return true;
 }
 
 // Menu Hambúrguer
