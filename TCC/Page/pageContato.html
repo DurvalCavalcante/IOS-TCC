@@ -130,7 +130,7 @@
                     <span class="circulo primeiro"></span>
                     <span class="circulo segundo"></span>
 
-                    <form id="formulario">
+                    <form id="formulario" onsubmit="validar()">
                         <h3 class="title">Entre Em Contato</h3>
                         <div class="input-container">
                             <input id="nome" type="text" name="name" class="input">
@@ -145,7 +145,7 @@
                         </div>
 
                         <div class="input-container">
-                            <input id="telefone" type="tel" name="telefone" class="input">
+                            <input id="telefone" type="tel" name="telefone" maxlength="11" class="input">
                             <label>Telefone</label>
                             <span>Telefone</span>
                         </div>
@@ -156,7 +156,7 @@
                             <span>Mensagem</span>
                         </div>
 
-                        <input id="btnEnviar" type="submit" value="Enviar" class="btnForm">
+                        <input type="submit" value="Enviar" class="btnForm">
                     </form>
                 </div>
 
