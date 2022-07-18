@@ -5,63 +5,193 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../IMG/tab.svg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-    <link rel="stylesheet" href="../CSS/pageHome.css">
-    <title>Page Home</title>
+    <link rel="stylesheet" href="/TCC/CSS/pageDoacao.css">
+    <title>OPASE</title>
 </head>
 
 <body>
     <header>
         <div id="header">
-            <a href="pageHome.html"><img src="../IMG/NEWLOGO.svg" alt="logo" id="logo"></a>
+            <a href="/pageHome.html"><img src="/TCC/IMG/NEWLOGO.svg" alt="logo" id="logo"></a>
 
             <nav id="nav">
 
-                <button onclick="toggleMenu();ChangeBG()" id="btn"></button>
+                <button id="btn" onclick="toggleMenu();ChangeBG()"></button>
 
                 <div id="menu">
                     <ul>
-                        <li><a href="pageHome.html">Início</a></li>
-                        <li><a href="#">Sobre</a></li>
-                        <li><a href="#">Contato</a></li>
+                        <li><a href="/pageHome.html">Início</a></li>
+                        <li><a href="/TCC/Page/pageSobre.html">Sobre</a></li>
+                        <li><a href="/TCC/Page/pageContato.html">Contato</a></li>
+                        <li><a id="donate" href="/TCC/Page/pageDoacao.html">Doação</a></li>
                     </ul>
                 </div>
             </nav>
         </div>
-
-        <section class="header-down">
-            <h1>Organização Protetora dos Animais Silvestres em Extinção - OPASE</h1>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus repudiandae corporis tempora, quas
-                voluptatibus autem sapiente magni eaque ut, recusandae commodi quia. Quidem minus consequatur soluta
-                aperiam
-                perferendis veritatis consectetur assumenda modi quibusdam laboriosam hic neque, facere maiores vel,
-                doloribus voluptatem aliquam corporis dolor excepturi temporibus laudantium deleniti numquam!
-                Consectetur!
-            </p>
-            <button>Doe Aqui!</button>
-        </section>
 
     </header>
 
     <main>
         <section class="resumo">
             <div>
-                <h1>Sobre a ONG</h1>
+                <h1>Quer ajudar a causa ?</h1>
 
                 <p class="aspas">
-                    Organização Protetora dos Animais Silvestres em Extinção (OPASE) é uma organização
-                    não-governamental, sem fins lucrativos, fundada em janeiro de 2020 para oferecer
-                    auxílio aos animais necessitados que estão em extinsão. Nossa missão sempre foi
-                    a de mudar a realidade destes que muitas vezes estão completamente indefesos, vítimas da crueldade e
-                    do abuso, enquanto tentam sobreviver sem proteção. Nós lutamos para defender seus interesses,
-                    realizando procedimentos veterinários à animais de tutores, protetores, e/ou de abrigos, incluindo
-                    resgates de animais, recuperação, campanhas de doações de rações, medicamentos e assistência
-                    veterinária. Nosso trabalho, no entanto, não se resume apenas nisso. Somos a voz dos animais,
-                    cuidamos atualmente de mais de 300 animais entre Onça-Pintada, Mico-Leão-Dourado e Lobo-Guará,
-                    vivendo em um ambiente seguro de todos os perigos.
+                    Você pode contribuir com a conservação dessas espécies na natureza, nos ajudando a adquirir
+                    equipamentos, responsáveis pelo levantamento de informações científicas, cruciais para a conservação
+                    da espécie. Sua contribuição é muito importante, de acordo com o valor da sua doação, você tem
+                    direito a resgatar algum de nossos brindes.
                 </p>
+            </div>
+
+        </section>
+
+        <section class="doacao">
+            <div class="cardDoacao-1">
+                <figure class="card-1">
+                    <img src="/TCC/IMG/mascara.jpg" alt="mascara">
+
+                    <figcaption>
+                        <h2>Máscara</h2>
+
+                        <div class="detalhes-1">
+                            <p><strong>Tamanho:</strong> M/G</p>
+                            <p><strong>Material:</strong> Poliéster</p>
+                            <p><strong>Faixa etária:</strong> Adulto</p>
+                            <p><strong>Cor:</strong> Cinza</p>
+                        </div>
+
+                    </figcaption>
+
+                    <button class="btnDetalhes-1">Detalhes</button>
+
+                </figure>
+
+                <div class="cardInfo-1">
+                    <h2 class="cardTitle-1">Máscara</h2>
+                    <p class="cardPreco-1"><sup>R$</sup> 50 <sub>,00</sub></p>
+
+                    <div class="cardParagrafo-1">
+                        <p class="cardDetalhes-1">Doação mínima de 50 reais</p>
+                        <p class="cardDetalhes-1">
+                            Estampa com logo da OPASE</p>
+                        <p class="cardDetalhes-1">Melhor respirabilidade</p>
+                        <p class="cardDetalhes-1">Ajustável</p>
+                        <p class="cardDetalhes-1">Estampa Da Logo OPASE</p>
+                    </div>
+
+                    <a href="pageForm-1.html" target="_blank"><button class="btnAdquirir-1">Adquirir</button></a>
+                </div>
+
+            </div>
+
+            <div class="cardDoacao-2">
+                <figure class="card-2">
+                    <img src="/TCC/IMG/Caneca.jpg" alt="caneca">
+
+                    <figcaption>
+                        <h2>Caneca</h2>
+
+                        <div class="detalhes-2">
+                            <p><strong>Capacidade:</strong> 325 ml</p>
+                            <p><strong>Material:</strong> Porcelana</p>
+                            <p><strong>Dimensões:</strong> 20 x 20 cm</p>
+                            <p><strong>Cor:</strong> Branca</p>
+                        </div>
+
+                    </figcaption>
+
+                    <button class="btnDetalhes-2">Detalhes</button>
+
+                </figure>
+
+                <div class="cardInfo-2">
+                    <h2 class="cardTitle-2">Caneca</h2>
+                    <p class="cardPreco-2"><sup>R$</sup> 150 <sub>,00</sub></p>
+
+                    <div class="cardParagrafo-2">
+                        <p class="cardDetalhes-2">Doação mínima de 150 reais</p>
+                        <p class="cardDetalhes-2">Estampa com logo da OPASE</p>
+                        <p style="border: none" cardDetalhes-3">⠀</p>
+                        <p style="border: none" class="cardDetalhes-3">⠀</p>
+                    </div>
+
+                    <a href="pageForm-1.html" target="_blank"><button class="btnAdquirir-2">Adquirir</button></a>
+                </div>
+
+            </div>
+
+            <div class="cardDoacao-3">
+                <figure class="card-3">
+                    <img src="/TCC/IMG/moletom.jpg" alt="moletom">
+
+                    <figcaption>
+                        <h2>Moletom unissex</h2>
+
+                        <div class="detalhes-3">
+                            <p><strong>Tamanhos:</strong> M/G/GG/2XL</p>
+                            <p><strong>Material: </strong>100% Algodão</p>
+                            <p><strong>Gênero: </strong>Unissex</p>
+                            <p><strong>Cor: </strong>Cayenne Orange</p>
+                        </div>
+
+                    </figcaption>
+
+                    <button class="btnDetalhes-3">Detalhes</button>
+
+                </figure>
+
+                <div class="cardInfo-3">
+                    <h2 class="cardTitle-3">Moletom</h2>
+                    <p class="cardPreco-3"><sup>R$</sup> 200 <sub>,00</sub></p>
+
+                    <div class="cardParagrafo-3">
+                        <p class="cardDetalhes-3">Doação mínima de 200 reais</p>
+                        <p class="cardDetalhes-3">Moletom </p>
+                        <p style="border: none" cardDetalhes-3">⠀</p>
+                        <p style="border: none" class="cardDetalhes-3">⠀</p>
+                    </div>
+
+                    <a href="pageForm-1.html" target="_blank"><button class="btnAdquirir-3">Adquirir</button></a>
+                </div>
+
+            </div>
+
+            <div class="cardDoacao-4">
+                <figure class="card-4">
+                    <img src="/TCC/IMG/personalizado.jpg" alt="mico">
+
+                    <figcaption>
+                        <h2>Personalizado</h2>
+
+                        <div class="detalhes-4">
+                            <p>⠀</p>
+                            <p>Doe um valor personalizado</p>
+                            <p>⠀</p>
+                            <p>⠀</p>
+                        </div>
+
+                    </figcaption>
+
+                    <button class="btnDetalhes-4">Detalhes</button>
+
+                </figure>
+                <div class="cardInfo-4">
+                    <h2 class="cardTitle-4"> Personalizada</h2>
+                    <p class="cardPreco-4"><sup>R$</sup> 500 <sub>,00</sub></p>
+
+                    <div class="cardParagrafo-4">
+                        <p class="cardDetalhes-4">⠀</p>
+                        <p class="cardDetalhes-4">Doe a quantia desejada</p>
+                        <p class="cardDetalhes-4">⠀</p>
+                        <p class="cardDetalhes-4">⠀</p>
+                    </div>
+
+                    <a href="pageForm-2.html" target="_blank"><button class="btnAdquirir-4">Adquirir</button></a>
+                </div>
 
             </div>
 
@@ -72,9 +202,10 @@
                 <h3>OPASE</h3>
                 <p>Organização Protetora dos Animais Silvestres em Extinção</p>
 
-                <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+                <a href="https://br.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+
 
             </div>
 
@@ -86,7 +217,7 @@
     </main>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="../JS/home.js"></script>
+    <script src="/TCC/JS/pageDoacao.js"></script>
 </body>
 
 </html>

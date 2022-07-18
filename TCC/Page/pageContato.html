@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../IMG/tab.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="/TCC/CSS/pageContato.css">
+    <title>OPASE</title>
+</head>
+
+<body>
+    <header>
+        <div id="header">
+            <a href="/pageHome.html"><img src="/TCC/IMG/NEWLOGO.svg" alt="logo" id="logo"></a>
+
+            <nav id="nav">
+
+                <button id="btn" onclick="toggleMenu();ChangeBG()"></button>
+
+                <div id="menu">
+                    <ul>
+                        <li><a href="/pageHome.html">Início</a></li>
+                        <li><a href="/TCC/Page/pageSobre.html">Sobre</a></li>
+                        <li><a href="/TCC/Page/pageContato.html">Contato</a></li>
+                        <li><a id="donate" href="/TCC/Page/pageDoacao.html">Doação</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="resumo">
+            <div>
+                <h1>Vamos Conversar?</h1>
+                <p>
+                    Ficaremos muito felizes em te conhecer e te responder caso tenha duvidas.
+                </p>
+
+                <h3>Aqui embaixo você vai encontrar algumas das nossas redes sociais:</h3>
+            </div>
+        </section>
+
+        <div class="cards">
+            <div class="card">
+                <img src="/TCC/IMG/Perfil-Durval.jpg">
+                <div class="contexto">
+                    <h2>Durval Cavalcante</h2>
+                    <h3>Desenvolvedor WEB</h3>
+                    <p>Olá, Eu sou Durval Cavalcante e sou um dos representantes da OPASE.</p>
+                    <a href="https://github.com/DurvalCavalcante" target="_blank" class="btnCards">GitHub</a>
+                    <a href="https://www.linkedin.com/in/durval-cavalcante/" target="_blank"
+                        class="btnCards">LinkedIn</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="/TCC/IMG/Perfil-Kauan.jpg">
+                <div class="contexto">
+                    <h2>Kauan Souza</h2>
+                    <h3>Desenvolvedor /  Designer</h3>
+                    <p>Olá, Eu sou Kauan Souza e sou um dos representantes da OPASE.</p>
+                    <a href="https://github.com/kauanty" target="_blank" class="btnCards">GitHub</a>
+                    <a href="https://br.linkedin.com/in/kauan-souza-144587210" target="_blank" class="btnCards">Linkedin</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="/TCC/IMG/Perfil-Mateus.jpg">
+                <div class="contexto">
+                    <h2>Mateus Resende</h2>
+                    <h3>Desenvolvedor WEB</h3>
+                    <p>Olá, Eu sou Mateus Resende e sou um dos representantes da OPASE.</p>
+                    <a href="https://github.com/MateusIOS" target="_blank" class="btnCards">GitHub</a>
+                    <a href="https://www.linkedin.com/mwlite/in/mateus-r-490292110" target="_blank" class="btnCards">Linkedin</a>
+                </div>
+            </div>
+            
+        </div>
+
+        <section class="resumoForm">
+            <div>
+                <h1>Utilize o formulário para entrar em contato</h1>
+
+            </div>
+
+        </section>
+
+        <div class="container">
+            <span class="grande-circulo"></span>
+            <img src="/TCC/IMG/shape.png" class="bg" alt="shape">
+
+            <div class="form">
+                <div class="contatoInfo">
+                    <h3 class="title">OPASE</h3>
+                    <p class="texto">Organização Protetora dos Animais Silvestres em Extinção</p>
+
+                    <div class="info">
+                        <div class="informacao">
+                            <img src="/TCC/IMG/location.png" class="icone" alt="opase">
+                            <p>Av. Gen. Ataliba Leonel, 245 - Santana, São Paulo - SP, 02033-000</p>
+                        </div>
+
+                        <div class="informacao">
+                            <img src="/TCC/IMG/email.png" class="icone" alt="opase">
+                            <p>ong-opase@gmail.com</p>
+                        </div>
+
+                        <div class="informacao">
+                            <img src="/TCC/IMG/phone.png" class="icone" alt="opase">
+                            <p>(11) 40022-8922</p>
+                        </div>
+                    </div>
+
+                    <div class="social-media">
+                        <p>Nossas Redes Sociais:</p>
+                        <div class="social-icone">
+                            <a href="https://www.facebook.com/" target="_blank"><i
+                                    class="fa-brands fa-facebook-square"></i></a>
+                            <a href="https://twitter.com/" target="_blank"><i
+                                    class="fa-brands fa-twitter-square"></i></a>
+                            <a href="https://br.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contatoForm">
+                    <span class="circulo primeiro"></span>
+                    <span class="circulo segundo"></span>
+
+                    <form id="formulario" onsubmit="validar()">
+                        <h3 class="title">Entre Em Contato</h3>
+                        <div class="input-container">
+                            <input id="nome" type="text" name="name" class="input">
+                            <label>Nome</label>
+                            <span>Nome</span>
+                        </div>
+
+                        <div class="input-container">
+                            <input id="email" type="email" name="email" class="input">
+                            <label>E-mail</label>
+                            <span>E-mail</span>
+                        </div>
+
+                        <div class="input-container">
+                            <input id="telefone" type="tel" name="telefone" maxlength="11" class="input">
+                            <label>Telefone</label>
+                            <span>Telefone</span>
+                        </div>
+
+                        <div class="input-container textarea">
+                            <textarea id="textarea" name="mensagem" class="input"></textarea>
+                            <label>Mensagem</label>
+                            <span>Mensagem</span>
+                        </div>
+
+                        <input type="submit" value="Enviar" class="btnForm">
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="social">
+            <h3>OPASE</h3>
+            <p>Organização Protetora dos Animais Silvestres em Extinção</p>
+
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+            <a href="https://br.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; OPASE <span> - Todos os Direitos Reservados - 2022</span>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/TCC/JS/pageContato.js"></script>
+</body>
+
+</html>

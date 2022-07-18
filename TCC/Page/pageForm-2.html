@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="icon" href="../IMG/tab.svg">
+    <link rel="stylesheet" href="/TCC/CSS/pageForm-2.css">
+    <title>OPASE</title>
+</head>
+
+<body>
+    <header>
+        <div id="header">
+            <a href="/pageHome.html"><img src="/TCC/IMG/NEWLOGO.svg" alt="logo" id="logo"></a>
+
+            <nav id="nav">
+
+                <button id="btn" onclick="toggleMenu();ChangeBG()"></button>
+
+                <div id="menu">
+                    <ul>
+                        <li><a href="/pageHome.html">Início</a></li>
+                        <li><a href="/TCC/Page/pageSobre.html">Sobre</a></li>
+                        <li><a href="/TCC/Page/pageContato.html">Contato</a></li>
+                        <li><a id="donate1" href="/TCC/Page/pageDoacao.html">Doação</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!--Botões-->
+        <div class="container3">
+
+
+            <div class="display-img">
+
+                <div class="div-img">
+
+
+                    <button id="display-card" class="text" type="button" onclick="generateQR()">
+                        <span id="text2" class="text">PIX</span>
+                        <span class="icon"><img src="/TCC/IMG/icon2.png" width="20" height="20" viewBox="0 0 24 24">
+                            <path
+                                d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
+                        </span>
+                    </button>
+
+                    <div id="timeout">
+
+                        <div id="qr-image">
+
+                            <span class="error"></span>
+                            <span id="doa">Valor da doação</span>
+                            <input class="donate" value="R$" type="text">
+                            <input type="submit" onclick="generataIMG()" value="Doar!" class="submit-btn3" ">
+
+                        </div>
+                        
+                        <div id="qr-image2">
+                            <span class="error"></span>
+                            <img src="" id="img" />
+                        
+                        </div>
+                    </div>
+                </div>
+
+                <div class="div-card">
+                    <div class="div-card">
+                        <button id="display-card" class="texte" onclick="cartao()"><span class="text">Cartão</span>
+                            <span class="icon"><img src="/TCC/IMG/icon.png" width="24" height="24" viewBox="0 0 24 24">
+                                <path
+                                    d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
+                            </span>
+                        </button>
+                    </div>
+
+
+                    <div id="teste">
+                        <div id="container">
+
+
+                            <!--//////Cartão//////-->
+
+                            <div class="container2">
+                                <div class="card-container">
+
+                                    <div class="front">
+                                        <div class="image">
+                                            <img src="/TCC/IMG/chip.png" alt="">
+                                            <img src="/TCC/IMG/visa.png" alt="">
+                                        </div>
+
+                                        <div class="card-number-box">#### - #### - #### - ####</div>
+                                        <div class="flexbox">
+                                            <div class="box">
+                                                <span>Titular do cartão</span>
+                                                <div class="card-holder-name">Nome completo</div>
+                                            </div>
+                                            <div class="box">
+                                                <span>Validade</span>
+                                                <div class="expiration">
+                                                    <span class="exp-month">mês</span>
+                                                    <span class="exp-year">/ ano</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="back">
+                                        <div class="stripe"></div>
+
+                                        <div class="box">
+                                            <span>cvv</span>
+                                            <div class="cvv-box"></div>
+                                            <img src="/TCC/IMG/visa.png" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <form action="">
+
+                                    <div class="inputbox">
+                                        <span>Numero do cartão</span>
+                                        <input type="text" maxlenght="16" class="card-number-input" id="card"
+                                            placeholder="#### - #### - #### - ####">
+                                    </div>
+
+                                    <div class="inputbox">
+                                        <span>Titular do cartão</span>
+                                        <input type="text" class="card-holder-input">
+                                    </div>
+
+                                    <div class="flexbox" id="donate">
+                                        <div class="inputbox">
+                                            <span>Validade: Mês</span>
+                                            <select name="" id="" class="month-input">
+                                                <option value="Mês" selected disabled>Mês</option>
+                                                <option value="01">01</option>
+                                                <option value="02">02</option>
+                                                <option value="03">03</option>
+                                                <option value="04">04</option>
+                                                <option value="05">05</option>
+                                                <option value="06">06</option>
+                                                <option value="07">07</option>
+                                                <option value="08">08</option>
+                                                <option value="09">09</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="inputbox">
+                                            <span>Validade: Ano</span>
+                                            <select name="" id="" class="year-input">
+                                                <option value="Ano" selected disabled>Ano</option>
+                                                <option value="2021">2021</option>
+                                                <option value="2022">2022</option>
+                                                <option value="2023">2023</option>
+                                                <option value="2024">2024</option>
+                                                <option value="2025">2025</option>
+                                                <option value="2026">2026</option>
+                                                <option value="2027">2027</option>
+                                                <option value="2028">2028</option>
+                                                <option value="2029">2029</option>
+                                                <option value="2030">2030</option>
+
+                                            </select>
+                                        </div>
+                                        <div class="inputbox">
+                                            <span>Validade:<br>CVV</span>
+                                            <input type="text" maxlength="3" class="cvv-input">
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="inputbox">
+                                        <span>Valor da doação</span>
+                                        <input type="text" value="R$" class="card-holder-input">
+                                    </div>
+                                    <input type="submit" onclick="OBRIGADO()" value="Doar!" class="submit-btn">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+    </main>
+
+    <footer>
+        <div class="social">
+            <h3>OPASE</h3>
+            <p>Organização Protetora dos Animais Silvestres em Extinção</p>
+
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+            <a href="https://br.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+
+
+        </div>
+
+        <div class="copyright">
+            <p>&copy; OPASE <span> - Todos os Direitos Reservados - 2022</span>
+            </p>
+        </div>
+    </footer>
+
+    <script src="/TCC/JS/pageForm-2.js"></script>
+</body>
+
+</html>

@@ -1,4 +1,8 @@
-const btn = document.getElementById('b');
+AOS.init();
+
+// Menu Hambúrguer
+
+const btn = document.getElementById("b");
 
 function toggleMenu() {
     const nav = document.getElementById('nav');
