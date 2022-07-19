@@ -68,7 +68,11 @@ function generateQR2() {
 
 function generataIMG() {
     alert("Endereço salvo");
-    console.log("Você quer um cookie?");
+    return
+}
+
+function pago(){
+    alert('Obrigado pela doação!')
     return
 }
 
