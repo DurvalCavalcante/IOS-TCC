@@ -72,7 +72,7 @@ function cartao() {
     }, 60000);
 }
 
-function OBRIGADO() {
+function obrigado() {
     alert("Obrigado por doar!");
     console.log("Obrigado");
     return

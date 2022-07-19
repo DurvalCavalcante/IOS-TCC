@@ -124,7 +124,7 @@ header {
 }
 
 .card-mapa img {
-    max-width: 50%;
+    max-width: 30%;
 }
 
 .resumo-p {
@@ -154,7 +154,7 @@ header {
     }
 
     .card-mapa img {
-        max-width: 60%;
+        max-width: 90%;
     }
 }
 
