@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="icon" href="../IMG/tab.svg">
+    <link rel="icon" href="/TCC/IMG/tab.svg">
     <link rel="stylesheet" href="/TCC/CSS/pageForm-1.css">
     <title>OPASE</title>
 </head>
@@ -137,17 +137,16 @@
 
                                 </div>
 
-                                <form action="">
+                                <form>
 
                                     <div class="inputbox">
                                         <span>Numero do cartão</span>
-                                        <input type="text" maxlenght="16" class="card-number-input" id="card"
-                                            placeholder="#### - #### - #### - ####">
+                                        <input type="text" class="card-number-input" maxlenght="16" placeholder="#### - #### - #### - ####">
                                     </div>
 
                                     <div class="inputbox">
                                         <span>Titular do cartão</span>
-                                        <input type="text" class="card-holder-input">
+                                        <input type="text" class="card-holder-input" maxlength="20">
                                     </div>
 
                                     <div class="flexbox">
@@ -192,7 +191,7 @@
                                             <input type="text" maxlength="4" class="cvv-input">
                                         </div>
                                     </div>
-                                    <input type="submit" value="Doar!" class="submit-btn" onclick="pago()">
+                                    <input type="submit" value="Doar!" class="submit-btn" onclick="obrigado()">
                                 </form>
                             </div>
                         </div>

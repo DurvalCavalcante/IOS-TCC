@@ -91,14 +91,22 @@ h1 {
 }
 
 .header-down p {
-    font-size: 18px;
+    background: rgba(255, 255, 255, 0.13);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-align: center;
     padding: 0 60px;
     padding-top: 30px;
     padding-bottom: 90px;
     font-family: 'Montserrat', sans-serif;
 }
 
-.header-down p::first-letter{
+.header-down p::first-letter {
     font-size: 32px;
 }
 
@@ -131,7 +139,7 @@ h1 {
 
 .resumo {
     width: 100%;
-    margin: 5% auto; 
+    margin: 5% auto;
     text-align: center;
     padding: 90px 0;
     color: #121212;
@@ -163,7 +171,7 @@ h1 {
     margin-bottom: 15px;
 }
 
-.resumo p::first-letter{
+.resumo p::first-letter {
     font-size: 32px;
 }
 
@@ -279,7 +287,7 @@ h1 {
     margin-bottom: 10px;
 }
 
-.sobre p::first-letter{
+.sobre p::first-letter {
     font-size: 32px;
 }
 
@@ -378,7 +386,7 @@ footer .social a:hover {
         overflow-y: auto;
     }
 
-    #menu ul{
+    #menu ul {
         display: flex;
         flex-direction: column;
         align-items: center;

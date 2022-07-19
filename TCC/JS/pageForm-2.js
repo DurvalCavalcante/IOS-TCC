@@ -72,10 +72,11 @@ function cartao() {
     }, 60000);
 }
 
-function pago() {
-        alert('Obrigado pela doação!')
-        return
-    }
+function obrigado() {
+    alert("Obrigado por doar!");
+    console.log("Obrigado");
+    return
+}
 
 // Menu Hambúrguer
 

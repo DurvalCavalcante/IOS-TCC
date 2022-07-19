@@ -30,27 +30,36 @@ const textaera = document.getElementById('textarea');
 formulario.addEventListener("submit", validar);
 
 function validar(event) {
-    event.preventDefault();
 
     if (nome.value == '') {
+        event.preventDefault();
+
         alert("- Preencher o campo Nome!");
         nome.focus();
         return false;
     }
     if (email.value == '') {
+        event.preventDefault();
+
         alert("- Preencher o campo E-mail!");
         email.focus();
         return false;
     }
     if (telefone.value == '') {
+        event.preventDefault();
+
         alert("- Preencher o campo Telefone!");
         telefone.focus();
         return false;
     }
     if (textaera.value == '') {
+        event.preventDefault();
+
         alert("- Preencher o campo Mensagem!");
         textaera.focus();
         return false;
+    } else {
+        alert("- Obrigado por entrar em contato!");
     }
     return true;
 }

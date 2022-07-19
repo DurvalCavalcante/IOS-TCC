@@ -559,7 +559,6 @@ footer .social a:hover {
 
 @media(max-widht:600px) {
     .container3 {
-
         background: linear-gradient(40deg, #F98C40, #d04a07);
         display: flex;
         align-items: center;

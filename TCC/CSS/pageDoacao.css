@@ -51,12 +51,13 @@ header {
     transition: 0.1s;
 }
 
-#donate{
+#donate {
     background-color: #26456e;
     color: #d9d9d9 !important;
     border-radius: 25px;
 }
-#donate:hover{ 
+
+#donate:hover {
     box-shadow: 0px 0px 25px 4px #6f9dd896;
 }
 
@@ -235,7 +236,7 @@ h1 {
 }
 
 .btnAdquirir-1 {
-    margin: 58px auto 60px auto;
+    margin: 150px auto 60px auto;
     padding: 15px 30px;
     display: block;
     width: 100%;
@@ -359,7 +360,7 @@ h1 {
 }
 
 .btnAdquirir-2 {
-    margin: 58px auto 60px auto;
+    margin: 150px auto 60px auto;
     padding: 15px 30px;
     display: block;
     width: 100%;
@@ -370,6 +371,7 @@ h1 {
     background-color: #fff;
     cursor: pointer;
 }
+
 
 /* Doação Card 2 Fim */
 
@@ -483,7 +485,7 @@ h1 {
 }
 
 .btnAdquirir-3 {
-    margin: 58px auto 60px auto;
+    margin: 150px auto 60px auto;
     padding: 15px 30px;
     display: block;
     width: 100%;
@@ -529,11 +531,12 @@ h1 {
 
 .detalhes-4 p {
     text-align: center;
+    padding-top: 10%;
 }
 
 .btnDetalhes-4 {
     color: #fff;
-    margin: 5.2px auto;
+    margin: 121px auto;
     padding: 12px 30px;
     display: block;
     width: 90%;
@@ -608,7 +611,7 @@ h1 {
 }
 
 .btnAdquirir-4 {
-    margin: 58px auto 60px auto;
+    margin: 195px auto 60px auto;
     padding: 15px 30px;
     display: block;
     width: 100%;
@@ -714,7 +717,7 @@ footer .social a:hover {
         overflow-y: auto;
     }
 
-    #menu ul{
+    #menu ul {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -774,7 +777,7 @@ footer .social a:hover {
     background: #193960;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 950px) {
     .doacao {
         display: inline;
         align-items: center;

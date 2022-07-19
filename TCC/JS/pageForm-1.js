@@ -66,13 +66,9 @@ function generateQR2() {
 
 }
 
-function generataIMG() {
-    alert("Endereço salvo");
-    return
-}
-
-function pago(){
-    alert('Obrigado pela doação!')
+function obrigado() {
+    alert("Obrigado por doar!");
+    console.log("Obrigado");
     return
 }
 
