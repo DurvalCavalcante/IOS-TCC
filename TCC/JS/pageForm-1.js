@@ -67,9 +67,13 @@ function generateQR2() {
 }
 
 function obrigado() {
-    alert("Obrigado por doar!");
+    alert("- Obrigado por doar!");
     console.log("Obrigado");
     return
+}
+
+function endereco() {
+    alert("- Endereço enviado!");
 }
 
 // Menu Hambúrguer
