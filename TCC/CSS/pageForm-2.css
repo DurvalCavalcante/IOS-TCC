@@ -61,6 +61,15 @@ header {
     transition: 0.1s;
 }
 
+#donate1{
+    background-color: #26456e;
+    color: #d9d9d9 !important;
+    border-radius: 25px;
+}
+#donate1:hover{ 
+    box-shadow: 0px 0px 25px 4px #6f9dd896;
+}
+
 #logo {
     width: 120px;
     margin-left: 30px;
@@ -215,7 +224,7 @@ header {
     background: linear-gradient(45deg, #185a9d, #43cea2);
     border-radius: 5px;
     backface-visibility: hidden;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 2);
+    box-shadow: 0px 10px 16px 4px rgba(0, 0, 0, 0.5);
     padding: 20px;
     transform: perspective(1000px) rotateY(0deg);
     transition: transform .4s ease-out;
@@ -381,7 +390,7 @@ header {
     -webkit-tap-highlight-color: transparent;
 }
 
-button {
+.container3 button {
     width: 160px;
     height: 60px;
     cursor: pointer;
@@ -418,7 +427,7 @@ button .icon {
 }
 
 button img {
-    width: 15px;
+    max-width: 15px;
     fill: #eee;
 }
 

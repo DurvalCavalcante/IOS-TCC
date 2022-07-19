@@ -10,7 +10,7 @@
 }
 
 body {
-    background-color: #fafafa;
+    background-color: #d9d9d9;
 }
 
 /* Header Início */
@@ -52,6 +52,15 @@ header {
     transition: 0.1s;
 }
 
+#donate{
+    background-color: #26456e;
+    color: #d9d9d9 !important;
+    border-radius: 25px;
+}
+#donate:hover{ 
+    box-shadow: 0px 0px 25px 4px #6f9dd896;
+}
+
 #logo {
     width: 120px;
     margin-left: 30px;
@@ -66,8 +75,8 @@ header {
 /* Resumo Início */
 .resumo {
     width: 100%;
-    margin: 30px 0;
-    padding: 120px 0;
+    margin: -26px 0;
+    padding: 100px 0;
     text-align: center;
     padding-top: 100px;
     color: #121212;
@@ -95,8 +104,8 @@ header {
 
 /* Cards Pessoal Início */
 .cards {
-    width: 75%;
-    margin: 50px auto;
+    width: 1020px;
+    margin: 0px auto;
     display: grid;
     grid-template-columns: repeat(3, minmax(250px, 1fr));
     grid-gap: 30px;
@@ -113,11 +122,14 @@ header {
 }
 
 .contexto {
+    height: 240px;
     text-align: center;
     padding: 10px;
+    background-color: #fff;
 }
 
 .contexto h2 {
+    place-items: center;
     margin-top: 5px;
     letter-spacing: 1.5px;
     color: #333;
@@ -130,12 +142,12 @@ header {
 }
 
 .contexto p {
-    margin-top: 10px;
+    margin-top: 20px;
     color: #5c5c5c;
 }
 
 .contexto a {
-    margin-top: 10px;
+    margin-top: 30px;
     text-decoration: none;
     display: inline-block;
     background-color: #d9563f;
@@ -166,7 +178,7 @@ header {
 /* Contato Início */
 .resumoForm {
     width: 100%;
-    margin-top: 15%;
+    margin-top: 5%;
     padding: 20px 0;
     text-align: center;
     padding-top: 100px;
@@ -696,10 +708,10 @@ footer .social a:hover {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #26456E;
+    background: #F98C40;
     border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #193960;
+    background: #db7d7d;
 }

@@ -58,6 +58,16 @@ header {
     transition: 0.1s;
 }
 
+#donate1 {
+    background-color: #26456e;
+    color: #d9d9d9 !important;
+    border-radius: 25px;
+}
+
+#donate1:hover {
+    box-shadow: 0px 0px 25px 4px #6f9dd896;
+}
+
 #logo {
     width: 120px;
     margin-left: 30px;
@@ -81,17 +91,16 @@ main {
 #qr-image2 {
     display: none;
     flex-direction: column;
-    margin: 10px;
+    width: 500px;
+    margin: 15px;
     color: rgb(12, 12, 12);
     background: linear-gradient(40deg, #d04a07, #F98C40);
     border-radius: 5px;
     padding: 30px;
     border-radius: 20px;
     font-family: 'Montserrat', sans-serif;
+    box-shadow: 0 0 6px 4px #1212126e;
 }
-
-
-
 
 .donate {
     padding: 5px 0;
@@ -214,7 +223,7 @@ main {
     background: linear-gradient(45deg, #185a9d, #43cea2);
     border-radius: 5px;
     backface-visibility: hidden;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 2);
+    box-shadow: 0px 10px 16px 4px rgba(0, 0, 0, 0.5);
     padding: 20px;
     transform: perspective(1000px) rotateY(0deg);
     transition: transform .4s ease-out;
@@ -286,7 +295,7 @@ main {
     height: 50px;
     padding: 10px;
     margin-top: 5px;
-    color: #fff;
+    color: black;
     background: #fff;
     border-radius: 5px;
     width: 100%;
@@ -392,7 +401,7 @@ main {
     -webkit-tap-highlight-color: transparent;
 }
 
-button {
+.container3 button {
     width: 160px;
     height: 60px;
     cursor: pointer;
@@ -401,12 +410,12 @@ button {
     background: #185a9d;
     border: none;
     border-radius: 5px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
     background: #963a19;
-    box-shadow: 1px 5px 5px;
+    box-shadow: 1px 2px 9px  #121212;
 }
 
-button, button span {
+button,
+button span {
     transition: 200ms;
 }
 
@@ -588,7 +597,7 @@ footer .social a:hover {
         overflow-y: auto;
     }
 
-    #menu ul{
+    #menu ul {
         display: flex;
         flex-direction: column;
         align-items: center;

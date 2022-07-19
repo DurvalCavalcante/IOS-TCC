@@ -10,12 +10,12 @@
 }
 
 body {
-    background-color: #fafafa;
+    background-color: #fff;
 }
 
 header {
     background-color: #F98C40;
-    box-shadow: 0 0 20px rgb(0, 0, 0, 0.4);
+    box-shadow: 0 0 10px #00000069;
     color: #121212;
 }
 
@@ -49,6 +49,15 @@ header {
     color: #d9d9d9;
     border-radius: 25px;
     transition: 0.1s;
+}
+
+#donate{
+    background-color: #26456e;
+    color: #d9d9d9 !important;
+    border-radius: 25px;
+}
+#donate:hover{ 
+    box-shadow: 0px 0px 25px 4px #6f9dd896;
 }
 
 #logo {
@@ -119,7 +128,7 @@ h1 {
 .cardDoacao-1 {
     margin: auto;
     width: 300px;
-    height: 500px;
+    height: 530px;
     border-radius: 10px;
     box-shadow: 0 5px 15px 0 rgb(0, 0, 0, 0.2);
     position: relative;
@@ -133,6 +142,7 @@ h1 {
 }
 
 .card-1 h2 {
+    padding: 10px 0;
     text-align: center;
     color: #121212;
 }
@@ -150,6 +160,7 @@ h1 {
 }
 
 .btnDetalhes-1 {
+    color: #fff;
     margin: 30px auto;
     padding: 12px 30px;
     display: block;
@@ -241,7 +252,7 @@ h1 {
 .cardDoacao-2 {
     margin: auto;
     width: 300px;
-    height: 500px;
+    height: 530px;
     border-radius: 10px;
     box-shadow: 0 5px 15px 0 rgb(0, 0, 0, 0.2);
     position: relative;
@@ -255,6 +266,7 @@ h1 {
 }
 
 .card-2 h2 {
+    padding: 10px 0;
     text-align: center;
     color: #121212;
 }
@@ -272,6 +284,7 @@ h1 {
 }
 
 .btnDetalhes-2 {
+    color: #fff;
     margin: 30px auto;
     padding: 12px 30px;
     display: block;
@@ -363,7 +376,7 @@ h1 {
 .cardDoacao-3 {
     margin: auto;
     width: 300px;
-    height: 500px;
+    height: 530px;
     border-radius: 10px;
     box-shadow: 0 5px 15px 0 rgb(0, 0, 0, 0.2);
     position: relative;
@@ -377,6 +390,7 @@ h1 {
 }
 
 .card-3 h2 {
+    padding: 10px 0;
     text-align: center;
     color: #121212;
 }
@@ -394,6 +408,7 @@ h1 {
 }
 
 .btnDetalhes-3 {
+    color: #fff;
     margin: 30px auto;
     padding: 12px 30px;
     display: block;
@@ -485,7 +500,7 @@ h1 {
 .cardDoacao-4 {
     margin: auto;
     width: 300px;
-    height: 500px;
+    height: 530px;
     border-radius: 10px;
     box-shadow: 0 5px 15px 0 rgb(0, 0, 0, 0.2);
     position: relative;
@@ -499,6 +514,7 @@ h1 {
 }
 
 .card-4 h2 {
+    padding: 10px 0;
     text-align: center;
     color: #121212;
 }
@@ -516,6 +532,7 @@ h1 {
 }
 
 .btnDetalhes-4 {
+    color: #fff;
     margin: 30px auto;
     padding: 12px 30px;
     display: block;
@@ -578,10 +595,11 @@ h1 {
 
 .cardDetalhes-4 {
     color: #fff;
+    text-align: center;
     font-size: 18px;
     padding: 10px 0;
     font-weight: normal;
-    border-bottom: 2px solid #eeeeee67;
+    /* border-bottom: 2px solid #eeeeee67; */
     padding-bottom: 10px;
 }
 
